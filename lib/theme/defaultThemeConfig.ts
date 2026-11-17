@@ -1,0 +1,402 @@
+import { ThemeConfig } from "types/themeConfig.types";
+
+/**
+ * Default Theme Configuration
+ * Based on TENANT_CONFIG_COLORS_AND_FONTS.md
+ * Reads from environment variables with proper fallbacks
+ * All font sizes are in px format (not rem)
+ */
+
+// Environment variables map - Next.js requires direct references
+const ENV_MAP: Record<string, string | undefined> = {
+  // Light mode colors
+  'NEXT_PUBLIC_PRIMARY_BACKGROUND_LIGHT': process.env.NEXT_PUBLIC_PRIMARY_BACKGROUND_LIGHT,
+  'NEXT_PUBLIC_PRIMARY_TEXT_LIGHT': process.env.NEXT_PUBLIC_PRIMARY_TEXT_LIGHT,
+  'NEXT_PUBLIC_SECONDARY_TEXT_LIGHT': process.env.NEXT_PUBLIC_SECONDARY_TEXT_LIGHT,
+  'NEXT_PUBLIC_PRIMARY_COLOR_LIGHT': process.env.NEXT_PUBLIC_PRIMARY_COLOR_LIGHT,
+  'NEXT_PUBLIC_CTA_HOVER_LIGHT': process.env.NEXT_PUBLIC_CTA_HOVER_LIGHT,
+  'NEXT_PUBLIC_ACCENT_COLOR_LIGHT': process.env.NEXT_PUBLIC_ACCENT_COLOR_LIGHT,
+  'NEXT_PUBLIC_SUCCESS_LIGHT': process.env.NEXT_PUBLIC_SUCCESS_LIGHT,
+  'NEXT_PUBLIC_WARNING_LIGHT': process.env.NEXT_PUBLIC_WARNING_LIGHT,
+  'NEXT_PUBLIC_ERROR_LIGHT': process.env.NEXT_PUBLIC_ERROR_LIGHT,
+  'NEXT_PUBLIC_BORDERS_DIVIDERS_LIGHT': process.env.NEXT_PUBLIC_BORDERS_DIVIDERS_LIGHT,
+  'NEXT_PUBLIC_CARDS_CONTAINERS_LIGHT': process.env.NEXT_PUBLIC_CARDS_CONTAINERS_LIGHT,
+  'NEXT_PUBLIC_PRIMARY_ICON_COLOR_LIGHT': process.env.NEXT_PUBLIC_PRIMARY_ICON_COLOR_LIGHT,
+  'NEXT_PUBLIC_HOVER_ACTIVE_ICON_COLOR_LIGHT': process.env.NEXT_PUBLIC_HOVER_ACTIVE_ICON_COLOR_LIGHT,
+  'NEXT_PUBLIC_WHITE_LIGHT': process.env.NEXT_PUBLIC_WHITE_LIGHT,
+  'NEXT_PUBLIC_BLACK_LIGHT': process.env.NEXT_PUBLIC_BLACK_LIGHT,
+  'NEXT_PUBLIC_BORDERS_LIGHT': process.env.NEXT_PUBLIC_BORDERS_LIGHT,
+  'NEXT_PUBLIC_TERTIARY_BUTTON_HOVER_BG_LIGHT': process.env.NEXT_PUBLIC_TERTIARY_BUTTON_HOVER_BG_LIGHT,
+  'NEXT_PUBLIC_SECONDARY_BACKGROUND_LIGHT': process.env.NEXT_PUBLIC_SECONDARY_BACKGROUND_LIGHT,
+  'NEXT_PUBLIC_INNER_ALLIGNMENT_BORDER_LIGHT': process.env.NEXT_PUBLIC_INNER_ALLIGNMENT_BORDER_LIGHT,
+  'NEXT_PUBLIC_ORDER_STATUS_BAR_LIGHT': process.env.NEXT_PUBLIC_ORDER_STATUS_BAR_LIGHT,
+  'NEXT_PUBLIC_TERTIARY_ACTIVE_BACKGROUND_LIGHT': process.env.NEXT_PUBLIC_TERTIARY_ACTIVE_BACKGROUND_LIGHT,
+  'NEXT_PUBLIC_SECONDARY_ACTIVE_BACKGROUND_LIGHT': process.env.NEXT_PUBLIC_SECONDARY_ACTIVE_BACKGROUND_LIGHT,
+  'NEXT_PUBLIC_BUTTON_ACTIVE_BG_LIGHT': process.env.NEXT_PUBLIC_BUTTON_ACTIVE_BG_LIGHT,
+  'NEXT_PUBLIC_WARNING_WITH_OPACITY_LIGHT': process.env.NEXT_PUBLIC_WARNING_WITH_OPACITY_LIGHT,
+  'NEXT_PUBLIC_PRIMARY_COLOR_OPACITY': process.env.NEXT_PUBLIC_PRIMARY_COLOR_OPACITY,
+  'NEXT_PUBLIC_FREEBIES_BG_LIGHT': process.env.NEXT_PUBLIC_FREEBIES_BG_LIGHT,
+  'NEXT_PUBLIC_FREEBIE_TAG_LIGHT': process.env.NEXT_PUBLIC_FREEBIE_TAG_LIGHT,
+  'NEXT_PUBLIC_PRODUCT_OFFER_BG_LIGHT_START': process.env.NEXT_PUBLIC_PRODUCT_OFFER_BG_LIGHT_START,
+  'NEXT_PUBLIC_PRODUCT_OFFER_BG_LIGHT_END': process.env.NEXT_PUBLIC_PRODUCT_OFFER_BG_LIGHT_END,
+  
+  // Dark mode colors
+  'NEXT_PUBLIC_PRIMARY_BACKGROUND_DARK': process.env.NEXT_PUBLIC_PRIMARY_BACKGROUND_DARK,
+  'NEXT_PUBLIC_PRIMARY_TEXT_DARK': process.env.NEXT_PUBLIC_PRIMARY_TEXT_DARK,
+  'NEXT_PUBLIC_SECONDARY_TEXT_DARK': process.env.NEXT_PUBLIC_SECONDARY_TEXT_DARK,
+  'NEXT_PUBLIC_PRIMARY_COLOR_DARK': process.env.NEXT_PUBLIC_PRIMARY_COLOR_DARK,
+  'NEXT_PUBLIC_CTA_HOVER_DARK': process.env.NEXT_PUBLIC_CTA_HOVER_DARK,
+  'NEXT_PUBLIC_ACCENT_COLOR_DARK': process.env.NEXT_PUBLIC_ACCENT_COLOR_DARK,
+  'NEXT_PUBLIC_SUCCESS_DARK': process.env.NEXT_PUBLIC_SUCCESS_DARK,
+  'NEXT_PUBLIC_WARNING_DARK': process.env.NEXT_PUBLIC_WARNING_DARK,
+  'NEXT_PUBLIC_ERROR_DARK': process.env.NEXT_PUBLIC_ERROR_DARK,
+  'NEXT_PUBLIC_BORDERS_DIVIDERS_DARK': process.env.NEXT_PUBLIC_BORDERS_DIVIDERS_DARK,
+  'NEXT_PUBLIC_CARDS_CONTAINERS_DARK': process.env.NEXT_PUBLIC_CARDS_CONTAINERS_DARK,
+  'NEXT_PUBLIC_PRIMARY_ICON_COLOR_DARK': process.env.NEXT_PUBLIC_PRIMARY_ICON_COLOR_DARK,
+  'NEXT_PUBLIC_HOVER_ACTIVE_ICON_COLOR_DARK': process.env.NEXT_PUBLIC_HOVER_ACTIVE_ICON_COLOR_DARK,
+  'NEXT_PUBLIC_WHITE_DARK': process.env.NEXT_PUBLIC_WHITE_DARK,
+  'NEXT_PUBLIC_BLACK_DARK': process.env.NEXT_PUBLIC_BLACK_DARK,
+  'NEXT_PUBLIC_BORDERS_DARK': process.env.NEXT_PUBLIC_BORDERS_DARK,
+  'NEXT_PUBLIC_TERTIARY_BUTTON_HOVER_BG_DARK': process.env.NEXT_PUBLIC_TERTIARY_BUTTON_HOVER_BG_DARK,
+  'NEXT_PUBLIC_SECONDARY_BACKGROUND_DARK': process.env.NEXT_PUBLIC_SECONDARY_BACKGROUND_DARK,
+  'NEXT_PUBLIC_INNER_ALLIGNMENT_BORDER_DARK': process.env.NEXT_PUBLIC_INNER_ALLIGNMENT_BORDER_DARK,
+  'NEXT_PUBLIC_ORDER_STATUS_BAR_DARK': process.env.NEXT_PUBLIC_ORDER_STATUS_BAR_DARK,
+  'NEXT_PUBLIC_TERTIARY_ACTIVE_BACKGROUND_DARK': process.env.NEXT_PUBLIC_TERTIARY_ACTIVE_BACKGROUND_DARK,
+  'NEXT_PUBLIC_SECONDARY_ACTIVE_BACKGROUND_DARK': process.env.NEXT_PUBLIC_SECONDARY_ACTIVE_BACKGROUND_DARK,
+  'NEXT_PUBLIC_BUTTON_ACTIVE_BG_DARK': process.env.NEXT_PUBLIC_BUTTON_ACTIVE_BG_DARK,
+  'NEXT_PUBLIC_WARNING_WITH_OPACITY_DARK': process.env.NEXT_PUBLIC_WARNING_WITH_OPACITY_DARK,
+  'NEXT_PUBLIC_FREEBIES_BG_DARK': process.env.NEXT_PUBLIC_FREEBIES_BG_DARK,
+  'NEXT_PUBLIC_FREEBIE_TAG_DARK': process.env.NEXT_PUBLIC_FREEBIE_TAG_DARK,
+  'NEXT_PUBLIC_PRODUCT_OFFER_BG_DARK_START': process.env.NEXT_PUBLIC_PRODUCT_OFFER_BG_DARK_START,
+  'NEXT_PUBLIC_PRODUCT_OFFER_BG_DARK_END': process.env.NEXT_PUBLIC_PRODUCT_OFFER_BG_DARK_END,
+  
+  // Rating colors
+  'NEXT_PUBLIC_RATING_BG_PRIMARY_LIGHT': process.env.NEXT_PUBLIC_RATING_BG_PRIMARY_LIGHT,
+  'NEXT_PUBLIC_RATING_BG_SECONDARY_LIGHT': process.env.NEXT_PUBLIC_RATING_BG_SECONDARY_LIGHT,
+  'NEXT_PUBLIC_RATING_BG_SUCCESS_PRIMARY_LIGHT': process.env.NEXT_PUBLIC_RATING_BG_SUCCESS_PRIMARY_LIGHT,
+  'NEXT_PUBLIC_RATING_BG_SUCCESS_PRIMARY_TRANSPARENT': process.env.NEXT_PUBLIC_RATING_BG_SUCCESS_PRIMARY_TRANSPARENT,
+  'NEXT_PUBLIC_RATING_BG_SUCCESS_SECONDARY_LIGHT': process.env.NEXT_PUBLIC_RATING_BG_SUCCESS_SECONDARY_LIGHT,
+  'NEXT_PUBLIC_RATING_BG_WARNING_PRIMARY_LIGHT': process.env.NEXT_PUBLIC_RATING_BG_WARNING_PRIMARY_LIGHT,
+  'NEXT_PUBLIC_RATING_BG_WARNING_PRIMARY_TRANSPARENT': process.env.NEXT_PUBLIC_RATING_BG_WARNING_PRIMARY_TRANSPARENT,
+  'NEXT_PUBLIC_RATING_BG_WARNING_SECONDARY_LIGHT': process.env.NEXT_PUBLIC_RATING_BG_WARNING_SECONDARY_LIGHT,
+  'NEXT_PUBLIC_RATING_BG_ERROR_PRIMARY_LIGHT': process.env.NEXT_PUBLIC_RATING_BG_ERROR_PRIMARY_LIGHT,
+  'NEXT_PUBLIC_RATING_BG_ERROR_PRIMARY_TRANSPARENT': process.env.NEXT_PUBLIC_RATING_BG_ERROR_PRIMARY_TRANSPARENT,
+  'NEXT_PUBLIC_RATING_BORDER_PRIMARY_LIGHT': process.env.NEXT_PUBLIC_RATING_BORDER_PRIMARY_LIGHT,
+  'NEXT_PUBLIC_RATING_BORDER_SECONDARY_LIGHT': process.env.NEXT_PUBLIC_RATING_BORDER_SECONDARY_LIGHT,
+  'NEXT_PUBLIC_RATING_BORDER_SECONDARY_DARK': process.env.NEXT_PUBLIC_RATING_BORDER_SECONDARY_DARK,
+  
+  // Typography
+  'NEXT_PUBLIC_FONT_FAMILY': process.env.NEXT_PUBLIC_FONT_FAMILY,
+  'NEXT_PUBLIC_BASE_FONT_SIZE': process.env.NEXT_PUBLIC_BASE_FONT_SIZE,
+  'NEXT_PUBLIC_FONT_LIGHT': process.env.NEXT_PUBLIC_FONT_LIGHT,
+  'NEXT_PUBLIC_FONT_REGULAR': process.env.NEXT_PUBLIC_FONT_REGULAR,
+  'NEXT_PUBLIC_FONT_MEDIUM': process.env.NEXT_PUBLIC_FONT_MEDIUM,
+  'NEXT_PUBLIC_FONT_SEMI_BOLD': process.env.NEXT_PUBLIC_FONT_SEMI_BOLD,
+  'NEXT_PUBLIC_FONT_BOLD': process.env.NEXT_PUBLIC_FONT_BOLD,
+  'NEXT_PUBLIC_FONT_EXTRA_BOLD': process.env.NEXT_PUBLIC_FONT_EXTRA_BOLD,
+  'NEXT_PUBLIC_EXTRA_SMALL_FONT': process.env.NEXT_PUBLIC_EXTRA_SMALL_FONT,
+  'NEXT_PUBLIC_SMALL_FONT': process.env.NEXT_PUBLIC_SMALL_FONT,
+  'NEXT_PUBLIC_DESCRIPTION_FONT': process.env.NEXT_PUBLIC_DESCRIPTION_FONT,
+  'NEXT_PUBLIC_HEADING_H1': process.env.NEXT_PUBLIC_HEADING_H1,
+  'NEXT_PUBLIC_HEADING_H2': process.env.NEXT_PUBLIC_HEADING_H2,
+  'NEXT_PUBLIC_HEADING_H3': process.env.NEXT_PUBLIC_HEADING_H3,
+  'NEXT_PUBLIC_HEADING_H4': process.env.NEXT_PUBLIC_HEADING_H4,
+  'NEXT_PUBLIC_HEADING_H5': process.env.NEXT_PUBLIC_HEADING_H5,
+  'NEXT_PUBLIC_HEADING_H6': process.env.NEXT_PUBLIC_HEADING_H6,
+  
+  // Button styles
+  'NEXT_PUBLIC_BUTTON_PRIMARY_BG_LIGHT': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_BG_LIGHT,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_TEXT_LIGHT': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_TEXT_LIGHT,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_BG_LIGHT': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_BG_LIGHT,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_TEXT_LIGHT': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_TEXT_LIGHT,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_COLOR_LIGHT': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_COLOR_LIGHT,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_WIDTH_LIGHT': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_WIDTH_LIGHT,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_FONT_SIZE_LIGHT': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_FONT_SIZE_LIGHT,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_BG_LIGHT': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_BG_LIGHT,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_TEXT_LIGHT': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_TEXT_LIGHT,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_BG_LIGHT': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_BG_LIGHT,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_TEXT_LIGHT': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_TEXT_LIGHT,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_COLOR_LIGHT': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_COLOR_LIGHT,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_WIDTH_LIGHT': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_WIDTH_LIGHT,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_FONT_SIZE_LIGHT': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_FONT_SIZE_LIGHT,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_BG_DARK': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_BG_DARK,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_TEXT_DARK': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_TEXT_DARK,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_BG_DARK': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_BG_DARK,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_TEXT_DARK': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_TEXT_DARK,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_COLOR_DARK': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_COLOR_DARK,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_WIDTH_DARK': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_WIDTH_DARK,
+  'NEXT_PUBLIC_BUTTON_PRIMARY_FONT_SIZE_DARK': process.env.NEXT_PUBLIC_BUTTON_PRIMARY_FONT_SIZE_DARK,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_BG_DARK': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_BG_DARK,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_TEXT_DARK': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_TEXT_DARK,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_BG_DARK': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_BG_DARK,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_TEXT_DARK': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_TEXT_DARK,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_COLOR_DARK': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_COLOR_DARK,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_WIDTH_DARK': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_WIDTH_DARK,
+  'NEXT_PUBLIC_BUTTON_SECONDARY_FONT_SIZE_DARK': process.env.NEXT_PUBLIC_BUTTON_SECONDARY_FONT_SIZE_DARK,
+};
+
+// Helper to get environment variable with fallback
+const getEnv = (key: string, fallback: string): string => {
+  const value = ENV_MAP[key];
+  console.log('Environment variable:', key, '=', value || fallback);
+  return value || fallback;
+};
+
+// Helper to convert rem to px (1rem = 16px by default)
+const convertRemToPx = (value: string, baseSize: number = 16): string => {
+  if (value.includes('rem')) {
+    const remValue = parseFloat(value);
+    if (!isNaN(remValue)) {
+      return `${Math.round(remValue * baseSize)}px`;
+    }
+  }
+  return value;
+};
+
+// Helper to get font size with automatic rem to px conversion
+const getFontSize = (key: string, fallback: string): string => {
+  const value = getEnv(key, fallback);
+  const converted = convertRemToPx(value);
+  console.log(`Font size conversion: ${key} = ${value} -> ${converted}`);
+  return converted;
+};
+
+// Helper to generate opacity color with fallback priority
+const getOpacityColor = (exactEnvVar: string, baseColor: string, opacitySuffix: string): string => {
+  // Priority 1: Check exact env var (e.g., NEXT_PUBLIC_PRIMARY_COLOR_OPACITY_LIGHT)
+  const exactValue = ENV_MAP[exactEnvVar];
+  if (exactValue) {
+    return exactValue;
+  }
+  
+  // Priority 2: Fallback - generate from base color + opacity
+  return baseColor + opacitySuffix;
+};
+
+export const DEFAULT_THEME_CONFIG: ThemeConfig = {
+  themeColors: {
+    light: {
+      // Core Theme Colors
+      primaryBackground: getEnv('NEXT_PUBLIC_PRIMARY_BACKGROUND_LIGHT', '#FAF9F1'),
+      primaryText: getEnv('NEXT_PUBLIC_PRIMARY_TEXT_LIGHT', '#2D2D2D'),
+      secondaryText: getEnv('NEXT_PUBLIC_SECONDARY_TEXT_LIGHT', '#757575'),
+      primaryColor: getEnv('NEXT_PUBLIC_PRIMARY_COLOR_LIGHT', '#F2C94C'),
+      ctaHover: getEnv('NEXT_PUBLIC_CTA_HOVER_LIGHT', '#FBC02D'),
+      accentColor: getEnv('NEXT_PUBLIC_ACCENT_COLOR_LIGHT', '#FF6B00'),
+      success: getEnv('NEXT_PUBLIC_SUCCESS_LIGHT', '#66BB6A'),
+      warning: getEnv('NEXT_PUBLIC_WARNING_LIGHT', '#FFA726'),
+      error: getEnv('NEXT_PUBLIC_ERROR_LIGHT', '#F44336'),
+      bordersDividers: getEnv('NEXT_PUBLIC_BORDERS_DIVIDERS_LIGHT', '#D7D5C4'),
+      cardsContainers: getEnv('NEXT_PUBLIC_CARDS_CONTAINERS_LIGHT', '#FFFFFF'),
+      primaryIconColor: getEnv('NEXT_PUBLIC_PRIMARY_ICON_COLOR_LIGHT', '#424242'),
+      hoverActiveIconColor: getEnv('NEXT_PUBLIC_HOVER_ACTIVE_ICON_COLOR_LIGHT', '#F2C94C'),
+      white: getEnv('NEXT_PUBLIC_WHITE_LIGHT', '#FFFFFF'),
+      black: getEnv('NEXT_PUBLIC_BLACK_LIGHT', '#000000'),
+      
+      // Additional Theme Colors
+      borders: getEnv('NEXT_PUBLIC_BORDERS_LIGHT', '#323232'),
+      tertiaryButtonHoverBg: getEnv('NEXT_PUBLIC_TERTIARY_BUTTON_HOVER_BG_LIGHT', '#f0f0f0'),
+      secondaryBackground: getEnv('NEXT_PUBLIC_SECONDARY_BACKGROUND_LIGHT', '#FAF9F1'),
+      innerAlignmentBorder: getEnv('NEXT_PUBLIC_INNER_ALLIGNMENT_BORDER_LIGHT', '#ECC9FE'),
+      orderStatusBar: getEnv('NEXT_PUBLIC_ORDER_STATUS_BAR_LIGHT', '#FFF0E5'),
+      
+      // Colors with Opacity - Priority: exact env var, then fallback to base + opacity
+      tertiaryActiveBackground: getOpacityColor(
+        'NEXT_PUBLIC_TERTIARY_ACTIVE_BACKGROUND_LIGHT',
+        getEnv('NEXT_PUBLIC_PRIMARY_COLOR_LIGHT', '#F2C94C'),
+        '0D'
+      ),
+      secondaryActiveBackground: getOpacityColor(
+        'NEXT_PUBLIC_SECONDARY_ACTIVE_BACKGROUND_LIGHT',
+        getEnv('NEXT_PUBLIC_PRIMARY_COLOR_LIGHT', '#F2C94C'),
+        '1A'
+      ),
+      buttonActiveBg: getOpacityColor(
+        'NEXT_PUBLIC_BUTTON_ACTIVE_BG_LIGHT',
+        getEnv('NEXT_PUBLIC_PRIMARY_COLOR_LIGHT', '#F2C94C'),
+        '33'
+      ),
+      warningWithOpacity: getOpacityColor(
+        'NEXT_PUBLIC_WARNING_WITH_OPACITY_LIGHT',
+        getEnv('NEXT_PUBLIC_WARNING_LIGHT', '#FFA726'),
+        '21'
+      ),
+      primaryColorOpacity: getOpacityColor(
+        'NEXT_PUBLIC_PRIMARY_COLOR_OPACITY',
+        getEnv('NEXT_PUBLIC_PRIMARY_COLOR_LIGHT', '#F2C94C'),
+        '66'
+      ),
+      
+      // Freebie Colors
+      freebiesBg: getEnv('NEXT_PUBLIC_FREEBIES_BG_LIGHT', '#E1F0D9'),
+      freebieTag: getEnv('NEXT_PUBLIC_FREEBIE_TAG_LIGHT', '#66BB6A'),
+      
+      // Product Offer Colors
+      productOfferBgStart: getEnv('NEXT_PUBLIC_PRODUCT_OFFER_BG_LIGHT_START', '#E6FFE7'),
+      productOfferBgEnd: getEnv('NEXT_PUBLIC_PRODUCT_OFFER_BG_LIGHT_END', '#FFFFFF'),
+      
+      // Rating Colors
+      ratingColors: {
+        bgPrimaryLight: getEnv('NEXT_PUBLIC_RATING_BG_PRIMARY_LIGHT', '#F3BF05'),
+        bgSecondaryLight: getEnv('NEXT_PUBLIC_RATING_BG_SECONDARY_LIGHT', '#E1E3E5'),
+        bgSuccessPrimaryLight: getEnv('NEXT_PUBLIC_RATING_BG_SUCCESS_PRIMARY_LIGHT', '#009F06'),
+        bgSuccessPrimaryTransparent: getEnv('NEXT_PUBLIC_RATING_BG_SUCCESS_PRIMARY_TRANSPARENT', '#009F060D'),
+        bgSuccessSecondaryLight: getEnv('NEXT_PUBLIC_RATING_BG_SUCCESS_SECONDARY_LIGHT', '#43D652'),
+        bgWarningPrimaryLight: getEnv('NEXT_PUBLIC_RATING_BG_WARNING_PRIMARY_LIGHT', '#CBEC00'),
+        bgWarningPrimaryTransparent: getEnv('NEXT_PUBLIC_RATING_BG_WARNING_PRIMARY_TRANSPARENT', '#CBEC000D'),
+        bgWarningSecondaryLight: getEnv('NEXT_PUBLIC_RATING_BG_WARNING_SECONDARY_LIGHT', '#FFB800'),
+        bgErrorPrimaryLight: getEnv('NEXT_PUBLIC_RATING_BG_ERROR_PRIMARY_LIGHT', '#FF0000'),
+        bgErrorPrimaryTransparent: getEnv('NEXT_PUBLIC_RATING_BG_ERROR_PRIMARY_TRANSPARENT', '#FF00000D'),
+        borderPrimaryLight: getEnv('NEXT_PUBLIC_RATING_BORDER_PRIMARY_LIGHT', '#D9A900'),
+        borderSecondaryLight: getEnv('NEXT_PUBLIC_RATING_BORDER_SECONDARY_LIGHT', '#94A0AF'),
+        borderSecondaryDark: getEnv('NEXT_PUBLIC_RATING_BORDER_SECONDARY_DARK', 'transparent')
+      }
+    },
+    dark: {
+      // Core Theme Colors
+      primaryBackground: getEnv('NEXT_PUBLIC_PRIMARY_BACKGROUND_DARK', '#121212'),
+      primaryText: getEnv('NEXT_PUBLIC_PRIMARY_TEXT_DARK', '#EDEDED'),
+      secondaryText: getEnv('NEXT_PUBLIC_SECONDARY_TEXT_DARK', '#B0B0B0'),
+      primaryColor: getEnv('NEXT_PUBLIC_PRIMARY_COLOR_DARK', '#F1C40F'),
+      ctaHover: getEnv('NEXT_PUBLIC_CTA_HOVER_DARK', '#F9A825'),
+      accentColor: getEnv('NEXT_PUBLIC_ACCENT_COLOR_DARK', '#FF6B00'),
+      success: getEnv('NEXT_PUBLIC_SUCCESS_DARK', '#388E3C'),
+      warning: getEnv('NEXT_PUBLIC_WARNING_DARK', '#FB8C00'),
+      error: getEnv('NEXT_PUBLIC_ERROR_DARK', '#D32F2F'),
+      bordersDividers: getEnv('NEXT_PUBLIC_BORDERS_DIVIDERS_DARK', '#121212'),
+      cardsContainers: getEnv('NEXT_PUBLIC_CARDS_CONTAINERS_DARK', '#212121'),
+      primaryIconColor: getEnv('NEXT_PUBLIC_PRIMARY_ICON_COLOR_DARK', '#B0B0B0'),
+      hoverActiveIconColor: getEnv('NEXT_PUBLIC_HOVER_ACTIVE_ICON_COLOR_DARK', '#F1C40F'),
+      white: getEnv('NEXT_PUBLIC_WHITE_DARK', '#FFFFFF'),
+      black: getEnv('NEXT_PUBLIC_BLACK_DARK', '#000000'),
+      
+      // Additional Theme Colors
+      borders: getEnv('NEXT_PUBLIC_BORDERS_DARK', '#ffffff1a'),
+      tertiaryButtonHoverBg: getEnv('NEXT_PUBLIC_TERTIARY_BUTTON_HOVER_BG_DARK', '#f0f0f0'),
+      secondaryBackground: getEnv('NEXT_PUBLIC_SECONDARY_BACKGROUND_DARK', '#FAF9F1'),
+      innerAlignmentBorder: getEnv('NEXT_PUBLIC_INNER_ALLIGNMENT_BORDER_DARK', '#ECC9FE'),
+      orderStatusBar: getEnv('NEXT_PUBLIC_ORDER_STATUS_BAR_DARK', '#353535'),
+      
+      // Colors with Opacity - Priority: exact env var, then fallback to base + opacity
+      // Note: For dark mode tertiaryActiveBackground, fallback to cardsContainers per documentation
+      tertiaryActiveBackground: getOpacityColor(
+        'NEXT_PUBLIC_TERTIARY_ACTIVE_BACKGROUND_DARK',
+        getEnv('NEXT_PUBLIC_CARDS_CONTAINERS_DARK', '#212121'),
+        ''
+      ),
+      secondaryActiveBackground: getOpacityColor(
+        'NEXT_PUBLIC_SECONDARY_ACTIVE_BACKGROUND_DARK',
+        getEnv('NEXT_PUBLIC_PRIMARY_COLOR_DARK', '#F1C40F'),
+        '1A'
+      ),
+      buttonActiveBg: getOpacityColor(
+        'NEXT_PUBLIC_BUTTON_ACTIVE_BG_DARK',
+        getEnv('NEXT_PUBLIC_PRIMARY_COLOR_DARK', '#F1C40F'),
+        '33'
+      ),
+      warningWithOpacity: getOpacityColor(
+        'NEXT_PUBLIC_WARNING_WITH_OPACITY_DARK',
+        getEnv('NEXT_PUBLIC_WARNING_DARK', '#FB8C00'),
+        '21'
+      ),
+      primaryColorOpacity: getOpacityColor(
+        'NEXT_PUBLIC_PRIMARY_COLOR_OPACITY',
+        getEnv('NEXT_PUBLIC_PRIMARY_COLOR_DARK', '#F1C40F'),
+        '66'
+      ),
+      
+      // Freebie Colors
+      freebiesBg: getEnv('NEXT_PUBLIC_FREEBIES_BG_DARK', '#0F2A01'),
+      freebieTag: getEnv('NEXT_PUBLIC_FREEBIE_TAG_DARK', '#66BB6A'),
+      
+      // Product Offer Colors
+      productOfferBgStart: getEnv('NEXT_PUBLIC_PRODUCT_OFFER_BG_DARK_START', '#003402'),
+      productOfferBgEnd: getEnv('NEXT_PUBLIC_PRODUCT_OFFER_BG_DARK_END', '#212121'),
+      
+      // Rating Colors (same as light per documentation)
+      ratingColors: {
+        bgPrimaryLight: getEnv('NEXT_PUBLIC_RATING_BG_PRIMARY_LIGHT', '#F3BF05'),
+        bgSecondaryLight: getEnv('NEXT_PUBLIC_RATING_BG_SECONDARY_LIGHT', '#E1E3E5'),
+        bgSuccessPrimaryLight: getEnv('NEXT_PUBLIC_RATING_BG_SUCCESS_PRIMARY_LIGHT', '#009F06'),
+        bgSuccessPrimaryTransparent: getEnv('NEXT_PUBLIC_RATING_BG_SUCCESS_PRIMARY_TRANSPARENT', '#009F060D'),
+        bgSuccessSecondaryLight: getEnv('NEXT_PUBLIC_RATING_BG_SUCCESS_SECONDARY_LIGHT', '#43D652'),
+        bgWarningPrimaryLight: getEnv('NEXT_PUBLIC_RATING_BG_WARNING_PRIMARY_LIGHT', '#CBEC00'),
+        bgWarningPrimaryTransparent: getEnv('NEXT_PUBLIC_RATING_BG_WARNING_PRIMARY_TRANSPARENT', '#CBEC000D'),
+        bgWarningSecondaryLight: getEnv('NEXT_PUBLIC_RATING_BG_WARNING_SECONDARY_LIGHT', '#FFB800'),
+        bgErrorPrimaryLight: getEnv('NEXT_PUBLIC_RATING_BG_ERROR_PRIMARY_LIGHT', '#FF0000'),
+        bgErrorPrimaryTransparent: getEnv('NEXT_PUBLIC_RATING_BG_ERROR_PRIMARY_TRANSPARENT', '#FF00000D'),
+        borderPrimaryLight: getEnv('NEXT_PUBLIC_RATING_BORDER_PRIMARY_LIGHT', '#D9A900'),
+        borderSecondaryLight: getEnv('NEXT_PUBLIC_RATING_BORDER_SECONDARY_LIGHT', '#94A0AF'),
+        borderSecondaryDark: getEnv('NEXT_PUBLIC_RATING_BORDER_SECONDARY_DARK', 'transparent')
+      }
+    }
+  },
+  
+  // Typography
+  fontFamily: getEnv('NEXT_PUBLIC_FONT_FAMILY', 'Arial'),
+  baseFontSize: getFontSize('NEXT_PUBLIC_BASE_FONT_SIZE', '16px'),
+  
+  fontWeights: {
+    light: getEnv('NEXT_PUBLIC_FONT_LIGHT', '300'),
+    regular: getEnv('NEXT_PUBLIC_FONT_REGULAR', '400'),
+    medium: getEnv('NEXT_PUBLIC_FONT_MEDIUM', '500'),
+    semiBold: getEnv('NEXT_PUBLIC_FONT_SEMI_BOLD', '600'),
+    bold: getEnv('NEXT_PUBLIC_FONT_BOLD', '700'),
+    extraBold: getEnv('NEXT_PUBLIC_FONT_EXTRA_BOLD', '800')
+  },
+  
+  fontSizes: {
+    xss: getFontSize('NEXT_PUBLIC_EXTRA_SMALL_FONT', '12px'),
+    small: getFontSize('NEXT_PUBLIC_SMALL_FONT', '14px'),
+    description: getFontSize('NEXT_PUBLIC_DESCRIPTION_FONT', '16px'),
+    h1: getFontSize('NEXT_PUBLIC_HEADING_H1', '40px'),  // 2.5rem * 16
+    h2: getFontSize('NEXT_PUBLIC_HEADING_H2', '27px'),  // 1.6875rem * 16
+    h3: getFontSize('NEXT_PUBLIC_HEADING_H3', '21px'),  // 1.3125rem * 16
+    h4: getFontSize('NEXT_PUBLIC_HEADING_H4', '18px'),  // 1.125rem * 16
+    h5: getFontSize('NEXT_PUBLIC_HEADING_H5', '16px'),  // 1.0rem * 16
+    h6: getFontSize('NEXT_PUBLIC_HEADING_H6', '14px')   // 0.875rem * 16
+  },
+  
+  buttonStyles: {
+    light: {
+      primary: {
+        background: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_BG_LIGHT', '#F2C94C'),
+        text: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_TEXT_LIGHT', '#2D2D2D'),
+        hoverBackground: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_BG_LIGHT', '#F2C94C'),
+        hoverText: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_TEXT_LIGHT', '#2D2D2D'),
+        borderColor: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_COLOR_LIGHT', 'transparent'),
+        borderWidth: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_WIDTH_LIGHT', '0px'),
+        fontSize: getFontSize('NEXT_PUBLIC_BUTTON_PRIMARY_FONT_SIZE_LIGHT', '16px')
+      },
+      secondary: {
+        background: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_BG_LIGHT', '#FFFFFF'),
+        text: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_TEXT_LIGHT', '#2D2D2D'),
+        hoverBackground: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_BG_LIGHT', '#FFFFFF'),
+        hoverText: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_TEXT_LIGHT', '#2D2D2D'),
+        borderColor: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_COLOR_LIGHT', '#F2C94C'),
+        borderWidth: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_WIDTH_LIGHT', '1px'),
+        fontSize: getFontSize('NEXT_PUBLIC_BUTTON_SECONDARY_FONT_SIZE_LIGHT', '16px')
+      }
+    },
+    dark: {
+      primary: {
+        background: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_BG_DARK', '#F1C40F'),
+        text: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_TEXT_DARK', '#2D2D2D'),
+        hoverBackground: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_BG_DARK', '#F1C40F'),
+        hoverText: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_HOVER_TEXT_DARK', '#2D2D2D'),
+        borderColor: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_COLOR_DARK', 'transparent'),
+        borderWidth: getEnv('NEXT_PUBLIC_BUTTON_PRIMARY_BORDER_WIDTH_DARK', '0px'),
+        fontSize: getFontSize('NEXT_PUBLIC_BUTTON_PRIMARY_FONT_SIZE_DARK', '16px')
+      },
+      secondary: {
+        background: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_BG_DARK', 'transparent'),
+        text: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_TEXT_DARK', '#EDEDED'),
+        hoverBackground: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_BG_DARK', 'transparent'),
+        hoverText: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_HOVER_TEXT_DARK', '#EDEDED'),
+        borderColor: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_COLOR_DARK', '#F1C40F'),
+        borderWidth: getEnv('NEXT_PUBLIC_BUTTON_SECONDARY_BORDER_WIDTH_DARK', '1px'),
+        fontSize: getFontSize('NEXT_PUBLIC_BUTTON_SECONDARY_FONT_SIZE_DARK', '16px')
+      }
+    }
+  }
+};

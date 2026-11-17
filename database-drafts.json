@@ -1,0 +1,3031 @@
+{
+  "/": {
+    "root": {
+      "props": {
+        "metaTags": {
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "author": "",
+          "robots": "index, follow",
+          "canonical": "",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "charset": "UTF-8"
+        },
+        "openGraph": {
+          "title": "",
+          "description": "",
+          "type": "website",
+          "url": "",
+          "image": "",
+          "imageAlt": "",
+          "imageWidth": "1200",
+          "imageHeight": "630",
+          "siteName": "",
+          "locale": "en_US"
+        },
+        "twitterCard": {
+          "card": "summary_large_image",
+          "site": "",
+          "creator": "",
+          "title": "",
+          "description": "",
+          "image": "",
+          "imageAlt": ""
+        },
+        "structuredData": {
+          "type": "Restaurant",
+          "name": "",
+          "description": "",
+          "url": "",
+          "logo": "",
+          "address": {
+            "streetAddress": "",
+            "addressLocality": "",
+            "addressRegion": "",
+            "postalCode": "",
+            "addressCountry": ""
+          },
+          "telephone": "",
+          "email": "",
+          "priceRange": "$$",
+          "servesCuisine": [],
+          "acceptsReservations": true,
+          "paymentAccepted": []
+        },
+        "additionalTags": {
+          "themeColor": "#000000",
+          "appleTouchIcon": "",
+          "favicon": "",
+          "manifest": "",
+          "hreflang": []
+        }
+      }
+    },
+    "content": [
+      {
+        "type": "MainBanner",
+        "props": {
+          "basicContent": {
+            "title": "Experience Authentic British Cuisine — Right in the Heart of Iconic London",
+            "button": {
+              "text": "Order Online",
+              "actionType": "url",
+              "link": "#"
+            },
+            "image": {
+              "url": "https://res.cloudinary.com/dtg06lpdc/image/upload/c_crop,w_1320,h_592/v1753251340/Main-Banner_drhuil.webp?format=webp"
+            }
+          },
+          "styling": {
+            "layout": {
+              "contentAlignment": "left",
+              "minHeight": 592,
+              "mobileHeight": 390,
+              "maxWidth": "100%"
+            },
+            "spacing": {
+              "paddingWeb": "40px 30px",
+              "paddingMobile": "28px 16px 24px"
+            },
+            "image": {
+              "backgroundPosition": "center",
+              "overlayOpacity": 0.1,
+              "overlayColor": "#000000",
+              "borderRadius": "20px",
+              "maxWidth": "100%",
+              "objectFit": "cover",
+              "mobile": {
+                "backgroundPosition": "center",
+                "borderRadius": "14px",
+                "maxWidth": "100%",
+                "objectFit": "cover"
+              }
+            },
+            "typography": {
+              "textColor": "text-white",
+              "fontSize": "60px",
+              "fontWeight": "600",
+              "lineHeight": "1.2",
+              "mobile": {
+                "fontWeight": "600",
+                "fontSize": "36px",
+                "lineHeight": "1.2"
+              },
+              "description": {
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "lineHeight": "1.3",
+                "color": "#ffffff",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "400",
+                  "lineHeight": "1.3",
+                  "color": "#ffffff",
+                  "alignment": "left"
+                }
+              }
+            },
+            "button": {
+              "backgroundColor": "var(--primary-color)",
+              "hoverBackgroundColor": "var(--cta-hover)",
+              "textColor": "#000000",
+              "fontWeight": "600",
+              "fontSize": "16px",
+              "height": "48px",
+              "width": "auto",
+              "borderRadius": "8px",
+              "padding": "10px 22px",
+              "boxShadow": "0px 2px 8px rgba(0,0,0,0.1)",
+              "mobile": {
+                "backgroundColor": "var(--primary-color)",
+                "hoverBackgroundColor": "var(--cta-hover)",
+                "textColor": "#000000",
+                "fontWeight": "600",
+                "fontSize": "14px",
+                "height": "44px",
+                "width": "auto",
+                "borderRadius": "8px",
+                "padding": "10px 22px",
+                "boxShadow": "0px 2px 8px rgba(0,0,0,0.1)"
+              }
+            }
+          },
+          "advanceSettings": {
+            "imageSettings": {
+              "lazyLoad": true,
+              "altText": "Delicious British food presentation",
+              "title": "Delicious British food presentation",
+              "ariaLabel": "Delicious British food presentation"
+            },
+            "accessibility": {
+              "ariaLabel": "Delicious British food presentation",
+              "role": "banner"
+            },
+            "buttonSettings": {
+              "showButton": true,
+              "target": "_blank",
+              "rel": "noopener noreferrer"
+            }
+          },
+          "id": "MainBanner-a9da45da-438b-4d82-9c74-51bb26f5a547"
+        }
+      },
+      {
+        "type": "MediaContent",
+        "props": {
+          "basic": {
+            "title": "British Cuisine... The Way It Should Be!",
+            "description": "At The Golden Spoon, we honour the rich traditions of British cooking with a modern touch. Our chefs craft each dish using the freshest local ingredients, blending classic flavours with contemporary techniques to create a dining experience that's both familiar and refreshingly new.",
+            "image": {
+              "url": "https://res.cloudinary.com/dtg06lpdc/image/upload/c_crop,w_440,h_380/v1753252917/British-Cuisine_fc8jta.png"
+            },
+            "button": {
+              "text": "Order Now",
+              "link": "/subway-bengaluru-rt-nagar/lunch/meal-deal",
+              "actionType": "url"
+            }
+          },
+          "styling": {
+            "layout": {
+              "maxWidth": "100%",
+              "backgroundColor": "transparent"
+            },
+            "spacing": {
+              "desktop": {
+                "padding": "40px 30px",
+                "margin": "0"
+              },
+              "mobile": {
+                "padding": "24px 16px",
+                "margin": "0"
+              }
+            },
+            "typography": {
+              "title": {
+                "fontSize": "48px",
+                "fontWeight": "600",
+                "lineHeight": "120%",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "28px",
+                  "fontWeight": "600",
+                  "lineHeight": "1.2"
+                }
+              },
+              "description": {
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "lineHeight": "120%",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "400",
+                  "lineHeight": "1.3"
+                }
+              }
+            },
+            "image": {
+              "position": "left",
+              "objectFit": "cover",
+              "borderRadius": "20px",
+              "maxWidth": "400px",
+              "mobile": {
+                "borderRadius": "14px",
+                "maxWidth": "100%",
+                "objectFit": "cover",
+                "position": "first"
+              },
+              "height": "380",
+              "width": "440"
+            },
+            "button": {
+              "backgroundColor": "var(--primary-color)",
+              "textColor": "#000000",
+              "fontWeight": "600",
+              "fontSize": "16px",
+              "height": "auto",
+              "width": "auto",
+              "borderRadius": "8px",
+              "padding": "10px 22px",
+              "boxShadow": "none",
+              "mobile": {
+                "backgroundColor": "var(--primary-color)",
+                "textColor": "#000000",
+                "fontWeight": "600",
+                "fontSize": "14px",
+                "height": "auto",
+                "width": "auto",
+                "borderRadius": "8px",
+                "padding": "10px 22px",
+                "boxShadow": "none"
+              }
+            }
+          },
+          "advanced": {
+            "accessibility": {
+              "ariaLabel": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "role": "region"
+            },
+            "imageSettings": {
+              "lazyLoad": true,
+              "altText": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "title": "British Cuisine",
+              "ariaLabel": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "aspectRatio": {
+                "desktop": "custom",
+                "mobile": "custom",
+                "custom": {
+                  "desktop": "440/380",
+                  "mobile": "343/305"
+                }
+              }
+            },
+            "buttonSettings": {
+              "target": "_self",
+              "rel": "noopener noreferrer",
+              "showButton": true
+            }
+          },
+          "id": "MediaContent-f0fa9b0c-068b-4a49-b3f5-d42bb4684338"
+        }
+      },
+      {
+        "type": "MediaContent",
+        "props": {
+          "basic": {
+            "title": "Our Pizzas, Your New Obsession",
+            "description": "From timeless classics to bold new flavours, every pizza is handcrafted with passion. We use only the finest ingredients — from freshly made dough to premium toppings. Whether you crave tradition or adventure, your perfect slice awaits.",
+            "image": {
+              "url": "https://res.cloudinary.com/dtg06lpdc/image/upload/v1753350834/pizza_s_mpovr6.png"
+            },
+            "button": {
+              "text": "Explore Pizza's",
+              "link": "/subway-bengaluru-rt-nagar/lunch/pastas",
+              "actionType": "url"
+            }
+          },
+          "styling": {
+            "layout": {
+              "maxWidth": "100%",
+              "backgroundColor": "transparent"
+            },
+            "spacing": {
+              "desktop": {
+                "padding": "40px 30px",
+                "margin": "0"
+              },
+              "mobile": {
+                "padding": "24px 16px",
+                "margin": "0"
+              }
+            },
+            "typography": {
+              "title": {
+                "fontSize": "48px",
+                "fontWeight": "600",
+                "lineHeight": "120%",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "28px",
+                  "fontWeight": "600",
+                  "lineHeight": "1.2"
+                }
+              },
+              "description": {
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "lineHeight": "120%",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "400",
+                  "lineHeight": "1.3"
+                }
+              }
+            },
+            "image": {
+              "position": "right",
+              "objectFit": "cover",
+              "borderRadius": "20px",
+              "maxWidth": "400px",
+              "mobile": {
+                "borderRadius": "14px",
+                "maxWidth": "100%",
+                "objectFit": "cover",
+                "position": "first"
+              }
+            },
+            "button": {
+              "backgroundColor": "var(--primary-color)",
+              "textColor": "#000000",
+              "fontWeight": "600",
+              "fontSize": "16px",
+              "height": "auto",
+              "width": "auto",
+              "borderRadius": "8px",
+              "padding": "10px 22px",
+              "boxShadow": "none",
+              "mobile": {
+                "backgroundColor": "var(--primary-color)",
+                "textColor": "#000000",
+                "fontWeight": "600",
+                "fontSize": "14px",
+                "height": "auto",
+                "width": "auto",
+                "borderRadius": "8px",
+                "padding": "10px 22px",
+                "boxShadow": "none"
+              }
+            }
+          },
+          "advanced": {
+            "accessibility": {
+              "ariaLabel": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "role": "region"
+            },
+            "imageSettings": {
+              "lazyLoad": true,
+              "altText": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "title": "British Cuisine",
+              "ariaLabel": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "aspectRatio": {
+                "desktop": "custom",
+                "mobile": "custom",
+                "custom": {
+                  "desktop": "440/380",
+                  "mobile": "343/305"
+                }
+              }
+            },
+            "buttonSettings": {
+              "target": "_self",
+              "rel": "noopener noreferrer",
+              "showButton": true
+            }
+          },
+          "id": "MediaContent-f90d005c-fe54-48fc-9d15-a0e379a08a69"
+        }
+      },
+      {
+        "type": "MediaContent",
+        "props": {
+          "basic": {
+            "title": "Celebrate in Style — We Cater.",
+            "description": "Planning an event or just taking a break from the kitchen? From intimate gatherings to large celebrations, we’ve got you covered.\n With Meny convenient locations and flexible options, we make catering easy, affordable, and delicious.",
+            "image": {
+              "url": "https://res.cloudinary.com/dtg06lpdc/image/upload/v1753258507/Celebrate_kid2p2.png"
+            },
+            "button": {
+              "text": "View Full Menu",
+              "link": "/menu",
+              "actionType": "openMenu"
+            }
+          },
+          "styling": {
+            "layout": {
+              "maxWidth": "100%",
+              "backgroundColor": "transparent"
+            },
+            "spacing": {
+              "desktop": {
+                "padding": "40px 30px",
+                "margin": "0"
+              },
+              "mobile": {
+                "padding": "24px 16px",
+                "margin": "0"
+              }
+            },
+            "typography": {
+              "title": {
+                "fontSize": "56px",
+                "fontWeight": "600",
+                "lineHeight": "1.2",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "28px",
+                  "fontWeight": "600",
+                  "lineHeight": "1.2"
+                }
+              },
+              "description": {
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "lineHeight": "1.3",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "400",
+                  "lineHeight": "1.3"
+                }
+              }
+            },
+            "image": {
+              "position": "left",
+              "objectFit": "cover",
+              "borderRadius": "20px",
+              "maxWidth": "400px",
+              "mobile": {
+                "borderRadius": "14px",
+                "maxWidth": "100%",
+                "objectFit": "cover",
+                "position": "first"
+              }
+            },
+            "button": {
+              "backgroundColor": "var(--primary-color)",
+              "textColor": "#000000",
+              "fontWeight": "600",
+              "fontSize": "16px",
+              "height": "auto",
+              "width": "auto",
+              "borderRadius": "8px",
+              "padding": "10px 22px",
+              "boxShadow": "none",
+              "mobile": {
+                "backgroundColor": "var(--primary-color)",
+                "textColor": "#000000",
+                "fontWeight": "600",
+                "fontSize": "14px",
+                "height": "auto",
+                "width": "auto",
+                "borderRadius": "8px",
+                "padding": "10px 22px",
+                "boxShadow": "none"
+              }
+            }
+          },
+          "advanced": {
+            "accessibility": {
+              "ariaLabel": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "role": "region"
+            },
+            "imageSettings": {
+              "lazyLoad": true,
+              "altText": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "title": "British Cuisine",
+              "ariaLabel": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "aspectRatio": {
+                "desktop": "custom",
+                "mobile": "custom",
+                "custom": {
+                  "desktop": "440/380",
+                  "mobile": "343/305"
+                }
+              }
+            },
+            "buttonSettings": {
+              "target": "_self",
+              "rel": "noopener noreferrer",
+              "showButton": true
+            }
+          },
+          "id": "MediaContent-cdc88671-9c01-4900-834c-ec9f6c32293f"
+        }
+      },
+      {
+        "type": "PopularItemsSection",
+        "props": {
+          "basicContent": {
+            "title": "Try our most popular items",
+            "subtitle": "Treat yourself to our most-try dishes that have gained people talking",
+            "button": {
+              "text": "View Full Menu",
+              "actionType": "openMenu",
+              "link": "#"
+            }
+          },
+          "styling": {
+            "layout": {
+              "backgroundColor": "transparent",
+              "maxWidth": "100%",
+              "mobile": {
+                "maxWidth": "100%",
+                "backgroundColor": "transparent"
+              }
+            },
+            "spacing": {
+              "padding": "40px 0px",
+              "margin": "0",
+              "mobile": {
+                "padding": "24px 16px",
+                "margin": "0"
+              }
+            },
+            "typography": {
+              "title": {
+                "fontSize": "40px",
+                "fontWeight": "600",
+                "color": "var(--primary-text)",
+                "lineHeight": "1.2",
+                "alignment": "center",
+                "mobile": {
+                  "fontSize": "24px",
+                  "fontWeight": "600",
+                  "color": "var(--primary-text)",
+                  "lineHeight": "1.2",
+                  "alignment": "center"
+                }
+              },
+              "subtitle": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "var(--secondary-text)",
+                "lineHeight": "1.4",
+                "alignment": "center",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "color": "var(--secondary-text)",
+                  "lineHeight": "1.4",
+                  "alignment": "center"
+                }
+              }
+            },
+            "card": {
+              "imageHeight": "320px",
+              "borderRadius": "12px",
+              "padding": "16px",
+              "productName": {
+                "lines": 1,
+                "fontSize": "16px",
+                "fontWeight": "600"
+              },
+              "rating": {
+                "gap": "4px",
+                "fontSize": "14px",
+                "fontWeight": "400"
+              },
+              "price": {
+                "fontSize": "18px",
+                "fontWeight": "600"
+              },
+              "mobile": {
+                "imageHeight": "200px",
+                "borderRadius": "8px",
+                "padding": "12px",
+                "productName": {
+                  "lines": 1,
+                  "fontSize": "14px"
+                },
+                "rating": {
+                  "gap": "2px",
+                  "fontSize": "12px",
+                  "fontWeight": "400"
+                },
+                "price": {
+                  "fontSize": "14px",
+                  "fontWeight": "700"
+                }
+              }
+            },
+            "button": {
+              "height": "auto",
+              "width": "auto",
+              "backgroundColor": "var(--button-primary-background)",
+              "textColor": "#000000",
+              "borderRadius": "8px",
+              "fontSize": "16px",
+              "fontWeight": "600",
+              "padding": "10px 22px",
+              "borderColor": "transparent",
+              "mobile": {
+                "height": "auto",
+                "width": "auto",
+                "backgroundColor": "var(--button-primary-background)",
+                "textColor": "#000000",
+                "borderRadius": "8px",
+                "fontSize": "14px",
+                "fontWeight": "600",
+                "padding": "10px 22px",
+                "borderColor": "transparent"
+              }
+            }
+          },
+          "advanceSettings": {
+            "slider": {
+              "showNavigation": true,
+              "breakpoints": {
+                "web": {
+                  "slidesPerView": 5.125,
+                  "spaceBetween": 20
+                },
+                "mobile": {
+                  "slidesPerView": 1.2,
+                  "spaceBetween": 15
+                }
+              },
+              "limit": 12
+            },
+            "buttonSettings": {
+              "target": "_self",
+              "rel": "noopener noreferrer",
+              "showButton": true,
+              "variant": "filled"
+            },
+            "accessibility": {
+              "ariaLabel": "Popular items section",
+              "role": "region"
+            },
+            "searchQuery": "*",
+            "searchBy": "name,description,productCategoryName.en",
+            "filterBy": "",
+            "sortBy": "",
+            "storeId": "",
+            "loading": false,
+            "error": null
+          },
+          "id": "PopularItemsSection-c82ef286-8636-48fa-89a0-4ba05e58664a",
+          "items": [
+            {
+              "name": "Coconut cookie",
+              "image": "https://photos.plateaway.com/plateaway/products/1744349781920_Coconut cookie.jpg",
+              "rating": 2.9,
+              "reviewCount": 5,
+              "price": "$59.00",
+              "productId": "67f8aa350abd6412e688d797",
+              "slug": "subway-coconut-cookies-rt-nagar-bengaluru",
+              "description": "Indulge in the tropical bliss of our coconut cookies, a global favorite! A sweet, chewy delight with a hint of coconut, topped with delicious white chocolate chunks. Baked to perfection and a perfect treat to satisfy your sugar cravings. A must-have dessert option, seamlessly merging French and American flavors.",
+              "productCategorySlug": "biscuits",
+              "linkedMenus": [
+                {
+                  "menuId": "67ee175c6b179959bf679da0",
+                  "menuSlug": "brunch"
+                },
+                {
+                  "menuId": "67ee171c6b179959bf679d9f",
+                  "menuSlug": "breakfast"
+                },
+                {
+                  "menuId": "67ee181e6b179959bf679da2",
+                  "menuSlug": "snacks"
+                }
+              ],
+              "seo": {
+                "description": "Discover delicious coconut cookies at Subway in RT Nagar, Bengaluru. Try our unique blend today! Freshly baked and irresistible.",
+                "slug": "",
+                "title": "Coconut Cookies at Subway RT Nagar, Bengaluru",
+                "urlManagement": {
+                  "canonicalUrl": "",
+                  "currentUrl": "",
+                  "customSlug": "subway-coconut-cookies-rt-nagar-bengaluru",
+                  "urlPattern": ""
+                }
+              }
+            },
+            {
+              "name": "Cosy Comfort White Sauce Pasta",
+              "image": "https://photos.plateaway.com/plateaway/products/1744281674614_Cosy Comfort White Sauce Pasta.jpg",
+              "rating": 2.4,
+              "reviewCount": 4,
+              "price": "$234.82",
+              "productId": "67f79fe72282eb701eeb172e",
+              "slug": "subway-rt-nagar-white-sauce-pasta-bengaluru",
+              "description": "Indulge in a cozy comfort food experience with our creamy white sauce pasta. Tender penne is perfectly al dente, tossed in a rich white sauce and topped with oregano. The subtle elegance of this dish is enhanced by fresh herbs, a hint of garlic, and a dash of pepper. A comforting meal that transports you to the heart of Italy.",
+              "productCategorySlug": "pastas",
+              "linkedMenus": [
+                {
+                  "menuId": "67ee175c6b179959bf679da0",
+                  "menuSlug": "brunch"
+                },
+                {
+                  "menuId": "67ee171c6b179959bf679d9f",
+                  "menuSlug": "breakfast"
+                },
+                {
+                  "menuId": "67ee181e6b179959bf679da2",
+                  "menuSlug": "snacks"
+                },
+                {
+                  "menuId": "67ee186f6b179959bf679da3",
+                  "menuSlug": "dinner"
+                }
+              ],
+              "seo": {
+                "description": "Savor creamy white sauce pasta at Subway in RT Nagar, Bengaluru. Enjoy a perfect blend of flavors. Visit today for a tasty treat!",
+                "slug": "",
+                "title": "Subway RT Nagar: White Sauce Pasta Bengaluru",
+                "urlManagement": {
+                  "canonicalUrl": "",
+                  "currentUrl": "",
+                  "customSlug": "subway-rt-nagar-white-sauce-pasta-bengaluru",
+                  "urlPattern": ""
+                }
+              }
+            },
+            {
+              "name": "Product with Offer",
+              "image": "https://photos.plateaway.com/plateaway/products/1749206339064_1744282416888_Classic Corn Pizza.jpeg",
+              "rating": 1.9,
+              "reviewCount": 3,
+              "price": "$223.02",
+              "productId": "6830b33632439552af3ab908",
+              "slug": "product-with-offer",
+              "description": "Indulge in a delicious meal with our special Product Offer. A generous portion of juicy, slow-roasted meat served with a side of creamy mashed potatoes and a special sauce. It's a delightful blend of flavors and textures, perfect for any hungry appetite. Don't miss out on this irresistible and satisfying dish!",
+              "productCategorySlug": "test-category",
+              "linkedMenus": [
+                {
+                  "menuId": "67ee171c6b179959bf679d9f",
+                  "menuSlug": "breakfast"
+                },
+                {
+                  "menuId": "67ee175c6b179959bf679da0",
+                  "menuSlug": "brunch"
+                },
+                {
+                  "menuId": "67ee17bb6b179959bf679da1",
+                  "menuSlug": "lunch"
+                },
+                {
+                  "menuId": "67ee181e6b179959bf679da2",
+                  "menuSlug": "snacks"
+                }
+              ],
+              "seo": {
+                "description": "Discover delicious Chinese, Italian, and American deals in Bengaluru (560079). Order now for exclusive discounts!",
+                "slug": "",
+                "title": "Top Chinese Italian in Bengaluru | Offers",
+                "urlManagement": {
+                  "canonicalUrl": "https://plateway.newkommerce.com/",
+                  "currentUrl": "https://plateway.newkommerce.com/",
+                  "customSlug": "product-with-offer",
+                  "urlPattern": ""
+                }
+              }
+            },
+            {
+              "name": "Onion Rings",
+              "image": "https://photos.plateaway.com/plateaway/products/1744870240278_Onion-Rings.jpg",
+              "rating": 0,
+              "reviewCount": 2,
+              "price": "$141.60",
+              "productId": "68009b4768b71b789c00b22f",
+              "slug": "crispy-onion-rings-subway-rt-nagar-bengaluru",
+              "description": "Indulge in the ultimate comfort food with our crispy onion rings. Carefully battered and fried to golden perfection, they're a delightful snack or the perfect side to your meal. Enjoy the crunchy texture and a burst of flavorful spices with every bite!",
+              "productCategorySlug": "sides",
+              "linkedMenus": [
+                {
+                  "menuId": "67ee175c6b179959bf679da0",
+                  "menuSlug": "brunch"
+                },
+                {
+                  "menuId": "67ee181e6b179959bf679da2",
+                  "menuSlug": "snacks"
+                },
+                {
+                  "menuId": "67ee17bb6b179959bf679da1",
+                  "menuSlug": "lunch"
+                },
+                {
+                  "menuId": "67ee186f6b179959bf679da3",
+                  "menuSlug": "dinner"
+                }
+              ],
+              "seo": {
+                "description": "Enjoy scrumptious onion rings at Subway RT Nagar, Bengaluru. Perfectly crispy sides for any meal. Visit us today!",
+                "slug": "",
+                "title": "Crispy Onion Rings in Bengaluru",
+                "urlManagement": {
+                  "canonicalUrl": "",
+                  "currentUrl": "",
+                  "customSlug": "crispy-onion-rings-subway-rt-nagar-bengaluru",
+                  "urlPattern": ""
+                }
+              }
+            },
+            {
+              "name": "Herby Falafel Wrap",
+              "image": "https://photos.plateaway.com/plateaway/products/1744087870787_Herby Falafel Wrap.jpg",
+              "rating": 3,
+              "reviewCount": 2,
+              "price": "$118.00",
+              "productId": "67ef8263c76057a8c73b3db7",
+              "slug": "subway-rt-nagar-herby-falafel-wrap-bengaluru",
+              "description": "<p>Indulge in the ultimate comfort of a warm wrap filled with crispy herby falafel, fresh vegetables, and a creamy sauce. With every bite, you'll experience the best of both worlds - a crispy-soft texture and a burst of flavors from the fresh ingredients, a delightful fusion of Japanese, Italian, French, and American tastes.</p>",
+              "productCategorySlug": "wraps",
+              "linkedMenus": [
+                {
+                  "menuId": "67ee17bb6b179959bf679da1",
+                  "menuSlug": "lunch"
+                },
+                {
+                  "menuId": "67ee186f6b179959bf679da3",
+                  "menuSlug": "dinner"
+                }
+              ],
+              "seo": {
+                "description": "Savor delicious Herby Falafel Wraps at Subway RT Nagar, Bengaluru. Fresh ingredients, globally inspired taste. Visit us or order online!",
+                "slug": "",
+                "title": "Subway RT Nagar: Herby Falafel Wraps",
+                "urlManagement": {
+                  "canonicalUrl": "",
+                  "currentUrl": "",
+                  "customSlug": "subway-rt-nagar-herby-falafel-wrap-bengaluru",
+                  "urlPattern": ""
+                }
+              }
+            },
+            {
+              "name": "Fanta",
+              "image": "https://photos.plateaway.com/plateaway/products/1749117469336_istockphoto-493952763-612x612.jpg",
+              "rating": 4,
+              "reviewCount": 1,
+              "price": "$23.60",
+              "productId": "684169cb21e64cd3256adcb7",
+              "slug": "fanta",
+              "description": "Beat the heat with a refreshing glass of Fanta Orange, a thrilling burst of tropical flavors! Our restaurant's signature soft drink, made with real orange extract, offers a perfect balance of sweetness and a zesty kick. Enjoy the vibrant taste of summer any time of the year.",
+              "productCategorySlug": "cold-drinks",
+              "linkedMenus": [
+                {
+                  "menuId": "67ee17bb6b179959bf679da1",
+                  "menuSlug": "lunch"
+                }
+              ],
+              "seo": {
+                "description": {},
+                "slug": "",
+                "title": {},
+                "urlManagement": {
+                  "canonicalUrl": "",
+                  "currentUrl": "",
+                  "customSlug": "fanta",
+                  "urlPattern": "{category-name}/{product-name}"
+                }
+              }
+            },
+            {
+              "name": "Classic Mushroom Pasta",
+              "image": "https://photos.plateaway.com/plateaway/products/1744281138307_Creamy-Mushroom-Pasta-V4.jpg",
+              "rating": 4,
+              "reviewCount": 1,
+              "price": "$156.94",
+              "productId": "67f79dbe2282eb701eeb171c",
+              "slug": "subway-classic-mushroom-pasta-bengaluru",
+              "description": "Indulge in the ultimate comfort food with our Classic Mushroom Pasta. Tender pasta is tossed in a rich, creamy sauce and loaded with juicy mushrooms. A delicate balance of flavors, this dish is a testament to the simplicity of the best Italian cuisine. Experience the warmth of a home-cooked meal, elevated.",
+              "productCategorySlug": "pastas",
+              "linkedMenus": [
+                {
+                  "menuId": "67ee175c6b179959bf679da0",
+                  "menuSlug": "brunch"
+                },
+                {
+                  "menuId": "67ee171c6b179959bf679d9f",
+                  "menuSlug": "breakfast"
+                },
+                {
+                  "menuId": "67ee17bb6b179959bf679da1",
+                  "menuSlug": "lunch"
+                },
+                {
+                  "menuId": "67ee181e6b179959bf679da2",
+                  "menuSlug": "snacks"
+                },
+                {
+                  "menuId": "67ee186f6b179959bf679da3",
+                  "menuSlug": "dinner"
+                }
+              ],
+              "seo": {
+                "description": "Savor the fusion taste of Classic Mushroom Pasta at Subway in Bengaluru. Enjoy a perfect blend of flavors. Try it today!",
+                "slug": "",
+                "title": "Subway: Classic Mushroom Pasta Bengaluru",
+                "urlManagement": {
+                  "canonicalUrl": "",
+                  "currentUrl": "",
+                  "customSlug": "subway-classic-mushroom-pasta-bengaluru",
+                  "urlPattern": ""
+                }
+              }
+            },
+            {
+              "name": "Mango Sundae",
+              "image": "https://photos.plateaway.com/plateaway/products/1744272895521_Mango Sundae.jpg",
+              "rating": 3,
+              "reviewCount": 1,
+              "price": "$82.60",
+              "productId": "67f77df4db2e106ca2d26662",
+              "slug": "subway-rt-nagar-mango-sundae-bengaluru",
+              "description": "Indulge in the ultimate tropical treat! Our Mango Sundae blends creamy ice cream with a lush mango flavor, topped with whipped cream and a sunny cherry on top. A delightful mix of fresh, fruity notes and creamy texture will transport you to a sunny day by the beach.",
+              "productCategorySlug": "deserts",
+              "linkedMenus": [
+                {
+                  "menuId": "67ee175c6b179959bf679da0",
+                  "menuSlug": "brunch"
+                },
+                {
+                  "menuId": "67ee181e6b179959bf679da2",
+                  "menuSlug": "snacks"
+                },
+                {
+                  "menuId": "67ee17bb6b179959bf679da1",
+                  "menuSlug": "lunch"
+                },
+                {
+                  "menuId": "67ee186f6b179959bf679da3",
+                  "menuSlug": "dinner"
+                }
+              ],
+              "seo": {
+                "description": "Indulge in Subway RT Nagar's Mango Sundae in Bengaluru. Perfectly crafted for dessert lovers, a must-try treat today!",
+                "slug": "",
+                "title": "Subway RT Nagar: Best Mango Sundae",
+                "urlManagement": {
+                  "canonicalUrl": "",
+                  "currentUrl": "",
+                  "customSlug": "subway-rt-nagar-mango-sundae-bengaluru",
+                  "urlPattern": ""
+                }
+              }
+            },
+            {
+              "name": "Smoky Burger",
+              "image": "https://photos.plateaway.com/plateaway/products/1744270673771_The-Smokey-Burger.jpg",
+              "rating": 3.4,
+              "reviewCount": 1,
+              "price": "$122.00",
+              "productId": "67f50cd8ac07ac0d494b4a45",
+              "slug": "smoky-burger-subway-rt-nagar-bengaluru",
+              "description": "<p>Indulge in the ultimate smoky flavor experience with our mountain burger. Crafted with care, this burger boasts a juicy patty grilled to perfection, topped with melt-in-your-mouth cheddar cheese, crisp bacon, and a generous helping of fresh produce. It's a delightful fusion of Japanese, Italian, French, and American flavors, representing our restaurant's unique specialty. A delicious, mouthwatering option you won't find anywhere else!</p>",
+              "productCategorySlug": "burgers",
+              "linkedMenus": [
+                {
+                  "menuId": "67ee17bb6b179959bf679da1",
+                  "menuSlug": "lunch"
+                },
+                {
+                  "menuId": "67ee186f6b179959bf679da3",
+                  "menuSlug": "dinner"
+                }
+              ],
+              "seo": {
+                "description": "Taste the Smoky Burger at Subway RT Nagar, Bengaluru. Enjoy the fusion of flavors from Japanese to American. Try it today!",
+                "slug": "",
+                "title": "Smoky Burger at Subway Bengaluru",
+                "urlManagement": {
+                  "canonicalUrl": "",
+                  "currentUrl": "",
+                  "customSlug": "smoky-burger-subway-rt-nagar-bengaluru",
+                  "urlPattern": ""
+                }
+              }
+            },
+            {
+              "name": "chargrilled chicken burger",
+              "image": "/plateaway/tenants/Frame+1171283906.png",
+              "rating": 0,
+              "reviewCount": 0,
+              "price": "$180.00",
+              "productId": "6888ad236f202cba3f8c4211",
+              "slug": "chargrilled-chicken-burger",
+              "description": "Taste the perfection of our chargrilled chicken burger, a classic American favorite. Tender chicken is expertly grilled, creating a juicy, smoky flavor. Served on a toasted artisanal bun with crisp vegetables, it's a delightful interplay of textures and tastes, elevated by a hint of garlic aioli. A delicious blend of international flavors, right here in Bengaluru!",
+              "productCategorySlug": "burgers",
+              "seo": {
+                "description": {},
+                "slug": "",
+                "title": {},
+                "urlManagement": {
+                  "canonicalUrl": "",
+                  "currentUrl": "",
+                  "customSlug": "chargrilled-chicken-burger",
+                  "urlPattern": ""
+                }
+              }
+            },
+            {
+              "name": "chargrilled chicken burger",
+              "image": "/plateaway/tenants/Frame+1171283906.png",
+              "rating": 0,
+              "reviewCount": 0,
+              "price": "$189.00",
+              "productId": "6888ad236f202cba3f8c4211",
+              "slug": "chargrilled-chicken-burger",
+              "description": "Taste the perfection of our chargrilled chicken burger, a classic American favorite. Tender chicken is expertly grilled, creating a juicy, smoky flavor. Served on a toasted artisanal bun with crisp vegetables, it's a delightful interplay of textures and tastes, elevated by a hint of garlic aioli. A delicious blend of international flavors, right here in Bengaluru!",
+              "productCategorySlug": "burgers",
+              "seo": {
+                "description": "",
+                "slug": "",
+                "title": "",
+                "urlManagement": {
+                  "canonicalUrl": "",
+                  "currentUrl": "",
+                  "customSlug": "chargrilled-chicken-burger",
+                  "urlPattern": ""
+                }
+              }
+            },
+            {
+              "name": "demoooo",
+              "image": "/plateaway/tenants/Frame+1171283906.png",
+              "rating": 0,
+              "reviewCount": 0,
+              "price": "$1234.00",
+              "productId": "688865853907842c99163b86",
+              "slug": "demoooo",
+              "description": "",
+              "productCategorySlug": "wraps",
+              "seo": {
+                "description": "",
+                "slug": "",
+                "title": "",
+                "urlManagement": {
+                  "canonicalUrl": "",
+                  "currentUrl": "",
+                  "customSlug": "demoooo",
+                  "urlPattern": ""
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "MediaContent",
+        "props": {
+          "basic": {
+            "title": "Named One of London’s Best Stargazy Pie – Ever",
+            "description": "Planning an event or just taking a break from the kitchen? From intimate gatherings to large celebrations, we’ve got you covered.\n With Meny convenient locations and flexible options, we make catering easy, affordable, and delicious.",
+            "image": {
+              "url": "https://res.cloudinary.com/dtg06lpdc/image/upload/v1753351162/strategy_q8gchb.png"
+            },
+            "button": {
+              "text": "View Full Menu",
+              "link": "/menu"
+            }
+          },
+          "styling": {
+            "layout": {
+              "maxWidth": "100%",
+              "backgroundColor": "transparent"
+            },
+            "spacing": {
+              "desktop": {
+                "padding": "40px 30px",
+                "margin": "0"
+              },
+              "mobile": {
+                "padding": "24px 16px",
+                "margin": "0"
+              }
+            },
+            "typography": {
+              "title": {
+                "fontSize": "48px",
+                "fontWeight": "600",
+                "lineHeight": "120%",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "28px",
+                  "fontWeight": "600",
+                  "lineHeight": "1.2"
+                }
+              },
+              "description": {
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "lineHeight": "120%",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "400",
+                  "lineHeight": "1.3"
+                }
+              }
+            },
+            "image": {
+              "position": "left",
+              "objectFit": "cover",
+              "borderRadius": "20px",
+              "maxWidth": "400px",
+              "mobile": {
+                "borderRadius": "14px",
+                "maxWidth": "100%",
+                "objectFit": "cover",
+                "position": "first"
+              }
+            },
+            "button": {
+              "backgroundColor": "var(--primary-color)",
+              "textColor": "#000000",
+              "fontWeight": "600",
+              "fontSize": "16px",
+              "height": "auto",
+              "width": "auto",
+              "borderRadius": "8px",
+              "padding": "10px 22px",
+              "boxShadow": "none",
+              "mobile": {
+                "backgroundColor": "var(--primary-color)",
+                "textColor": "#000000",
+                "fontWeight": "600",
+                "fontSize": "14px",
+                "height": "auto",
+                "width": "auto",
+                "borderRadius": "8px",
+                "padding": "10px 22px",
+                "boxShadow": "none"
+              }
+            }
+          },
+          "advanced": {
+            "accessibility": {
+              "ariaLabel": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "role": "region"
+            },
+            "imageSettings": {
+              "lazyLoad": true,
+              "altText": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "title": "British Cuisine",
+              "ariaLabel": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "aspectRatio": {
+                "desktop": "custom",
+                "mobile": "custom",
+                "custom": {
+                  "desktop": "440/380",
+                  "mobile": "343/305"
+                }
+              }
+            },
+            "buttonSettings": {
+              "target": "_self",
+              "rel": "noopener noreferrer",
+              "showButton": false
+            }
+          },
+          "id": "MediaContent-64873edb-5a2e-4353-8557-711c5aa2c40e"
+        }
+      },
+      {
+        "type": "OurServices",
+        "props": {
+          "basicContent": {
+            "title": "Our Services",
+            "subtitle": "We offer multiple ways to enjoy our cuisine",
+            "enableModal": true,
+            "showViewMore": true,
+            "viewMoreText": "View more",
+            "iconCards": [
+              {
+                "id": "1",
+                "title": "Dine In",
+                "description": "Enjoy our cozy atmosphere",
+                "longDescription": "Immerse yourself in our restaurant's inviting atmosphere where every meal becomes a memorable experience. Enjoy freshly prepared dishes served by our attentive staff in a comfortable setting perfect for romantic dinners, family gatherings, or business meetings. Our cozy ambiance features carefully curated décor, ambient lighting, and a welcoming environment that makes every visit special.",
+                "iconUrl": "/images/puck-page/dine-in.svg",
+                "iconSvg": "",
+                "iconType": "local",
+                "iconSize": 56,
+                "iconColor": "#F59E0B"
+              },
+              {
+                "id": "2",
+                "title": "Takeaway",
+                "description": "Quick collection service",
+                "longDescription": "Skip the wait and grab your favorite dishes to go with our efficient takeaway service. Perfect for busy professionals, families on the move, or anyone who wants to enjoy our signature cuisine in the comfort of their own space. Pre-order online or by phone for quick pickup, with all meals carefully packaged to maintain freshness and flavor during transport.",
+                "iconUrl": "/images/puck-page/take-away.svg",
+                "iconSvg": "",
+                "iconType": "local",
+                "iconSize": 56,
+                "iconColor": "#F59E0B"
+              },
+              {
+                "id": "3",
+                "title": "Delivery",
+                "description": "Fresh food to your door",
+                "longDescription": "Bring the restaurant experience directly to your home with our reliable delivery service. Our professional delivery team ensures your hot, fresh meals arrive promptly while maintaining the quality and presentation you expect. Available within our delivery radius with real-time tracking, contactless delivery options, and eco-friendly packaging that keeps your food at the perfect temperature.",
+                "iconUrl": "/images/puck-page/delivery.svg",
+                "iconSvg": "",
+                "iconType": "local",
+                "iconSize": 56,
+                "iconColor": "#F59E0B"
+              },
+              {
+                "id": "4",
+                "title": "Wi-Fi Access",
+                "description": "Free guest Wi-Fi",
+                "longDescription": "Stay connected with complimentary high-speed Wi-Fi available throughout our restaurant. Perfect for business meetings, catching up on emails, sharing your dining experience on social media, or simply browsing while you wait. Our reliable internet connection ensures seamless connectivity for all your devices, making our space ideal for both casual dining and productive work sessions.",
+                "iconUrl": "/images/puck-page/catering.svg",
+                "iconSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"72\" height=\"72\" viewBox=\"0 0 72 72\" fill=\"none\">\n<path d=\"M36 59.9993H36.03M6 26.459C14.2503 19.0797 24.931 15 36 15C47.069 15 57.7497 19.0797 66 26.459M15 38.5764C20.6079 33.0796 28.1474 30.0007 36 30.0007C43.8526 30.0007 51.3921 33.0796 57 38.5764M25.5 49.2864C28.3039 46.538 32.0737 44.9985 36 44.9985C39.9263 44.9985 43.6961 46.538 46.5 49.2864\" stroke=\"#F2C94C\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+                "iconType": "svg",
+                "iconSize": 56,
+                "iconColor": "#F59E0B"
+              },
+              {
+                "id": "5",
+                "title": "Accessible Parking",
+                "description": "Easy, nearby parking",
+                "longDescription": "We provide convenient accessible parking spaces located close to our main entrance for guests with mobility needs. Our clearly marked accessible spots feature proper spacing and smooth pathways to ensure easy access to our restaurant. We're committed to creating an inclusive dining experience where all guests can comfortably visit and enjoy our services, with additional accessibility features available inside our establishment.\n ",
+                "iconUrl": "/images/placeholder-icon.svg",
+                "iconSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"82\" height=\"72\" viewBox=\"0 0 82 72\" fill=\"none\">\n<path d=\"M77.7319 31.0263L71.145 28.0186L65.331 18.7432C63.6507 16.0546 60.6934 14.4247 57.5175 14.4415H32.7495C29.8762 14.4415 27.1541 15.769 25.4065 18.0542L17.8955 27.8841L5.37704 31.312C2.20123 32.1858 0 35.0927 0 38.3862V43.1751C0 47.2247 3.22622 50.5685 7.27581 50.5685H8.35122C9.64507 55.5591 14.7365 58.5501 19.727 57.2562C23.0037 56.3993 25.5746 53.8452 26.4147 50.5685H54.6442C55.938 55.5591 61.0294 58.5501 66.02 57.2562C69.2966 56.3993 71.8675 53.8452 72.7077 50.5685H74.7241C78.7737 50.5685 81.9999 47.2247 81.9999 43.1751V37.714C82.0167 34.8407 80.3364 32.2194 77.7319 31.0263ZM17.3746 54.1644C14.0811 54.1644 11.4094 51.4927 11.4094 48.1993C11.4094 44.9058 14.0811 42.2341 17.3746 42.2341C20.668 42.2341 23.3397 44.9058 23.3397 48.1993C23.3565 51.4759 20.6848 54.1476 17.3746 54.1644ZM63.6675 54.1644C60.3741 54.1644 57.7024 51.4927 57.7024 48.1993C57.7024 44.9058 60.3741 42.2341 63.6675 42.2341C66.961 42.2341 69.6327 44.9058 69.6327 48.1993C69.6495 51.4759 66.9778 54.1476 63.6675 54.1644ZM74.7241 47.2079H72.9429C72.3884 42.0829 67.7675 38.3862 62.6425 38.9575C58.2905 39.428 54.8626 42.8726 54.3921 47.2079H26.65C26.0955 42.0829 21.4746 38.3862 16.3496 38.9575C11.9975 39.428 8.56966 42.8726 8.09917 47.2079H7.25901C5.05778 47.2079 3.34385 45.3763 3.34385 43.1751V38.3862C3.32704 36.5882 4.52008 35.0255 6.25081 34.5382L19.3405 30.9591C19.6934 30.8583 20.0127 30.6567 20.2311 30.3542L28.0614 20.0874C29.1873 18.6423 30.918 17.8022 32.7495 17.8022H57.5175C59.5339 17.7854 61.4327 18.8104 62.4913 20.5243L68.5741 30.2366C68.7421 30.5222 69.011 30.7407 69.2966 30.8751L76.3204 34.0845C77.7319 34.7399 78.6392 36.1513 78.6224 37.714V43.1751H78.6392C78.6392 45.3763 76.9253 47.2079 74.7241 47.2079Z\" fill=\"#F2C94C\"/>\n</svg>",
+                "iconType": "svg",
+                "iconSize": 56,
+                "iconColor": "#F59E0B"
+              },
+              {
+                "id": "6",
+                "title": "Clean Restrooms",
+                "description": "Always tidy and fresh",
+                "longDescription": "Maintain your comfort with our meticulously maintained restroom facilities that prioritize hygiene and cleanliness. Our dedicated housekeeping team ensures regular cleaning and sanitization throughout the day, providing a spotless environment with quality amenities, fresh supplies, and proper ventilation. We understand that clean, well-maintained restrooms are essential to your dining experience, so we maintain the highest standards of cleanliness and stock essential items like soap, paper towels, and hand sanitizer for your convenience and peace of mind.",
+                "iconUrl": "/images/placeholder-icon.svg",
+                "iconSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"57\" height=\"54\" viewBox=\"0 0 57 54\" fill=\"none\">\n<path d=\"M11.335 0.577148C14.7901 0.577249 17.6006 3.38858 17.6006 6.84375C17.6005 10.2988 14.79 13.1093 11.335 13.1094C7.87979 13.1094 5.06846 10.2989 5.06836 6.84375C5.06836 3.38852 7.87973 0.577148 11.335 0.577148ZM11.335 2.95117C9.18888 2.95117 7.44753 4.69682 7.44727 6.83789C7.44727 8.97906 9.19379 10.7256 11.335 10.7256C13.476 10.7255 15.2227 8.979 15.2227 6.83789C15.2224 4.69688 13.481 2.95127 11.335 2.95117Z\" fill=\"#F2C94C\" stroke=\"#F2C94C\" stroke-width=\"0.3\"/>\n<path d=\"M15.9395 13.5684C19.2907 13.5684 22.013 16.2911 22.0078 19.6426V32.4619C22.0077 34.7635 20.1375 36.6338 17.8359 36.6338H17.6016V49.5889C17.6015 51.6402 15.9825 53.363 13.9854 53.4229C12.9783 53.4545 12.0526 53.0988 11.3301 52.4248C10.6391 53.0674 9.74304 53.4228 8.79492 53.4229H8.68066C6.68354 53.363 5.06454 51.6403 5.06445 49.5889V36.6289H4.83008C2.52351 36.6289 0.652605 34.7586 0.652344 32.457V19.6426C0.652344 16.2912 3.38054 13.5684 6.72656 13.5684H15.9395ZM6.72656 15.9473C4.68932 15.9473 3.03125 17.6053 3.03125 19.6426V32.457C3.03151 33.4441 3.83719 34.25 4.83008 34.25H5.06445V22.6094C5.06457 21.955 5.59954 21.4199 6.25391 21.4199C6.90815 21.4201 7.44324 21.9551 7.44336 22.6094V49.584C7.4436 50.3744 8.04245 51.016 8.75293 51.0391C9.1374 51.0531 9.47248 50.9184 9.73438 50.6611L9.73535 50.6602C10.0021 50.4026 10.1465 50.062 10.1465 49.6924V37.627C10.1465 36.9725 10.6815 36.4375 11.3359 36.4375C11.9902 36.4377 12.5244 36.9726 12.5244 37.627V49.6982C12.5245 50.0678 12.6698 50.4076 12.9365 50.665C13.1984 50.9176 13.5383 51.0522 13.9189 51.043C14.6341 51.0196 15.2284 50.3796 15.2285 49.5889V22.6094C15.2286 21.955 15.7636 21.4199 16.418 21.4199C17.0721 21.4201 17.6063 21.9552 17.6064 22.6094V34.25H17.8418C18.829 34.2498 19.6345 33.4443 19.6348 32.457V19.6426C19.6348 17.6053 17.9767 15.9473 15.9395 15.9473H6.72656Z\" fill=\"#F2C94C\" stroke=\"#F2C94C\" stroke-width=\"0.3\"/>\n<path d=\"M44.3896 0.577148C47.8448 0.57725 50.6553 3.38858 50.6553 6.84375C50.6552 10.2988 47.8447 13.1093 44.3896 13.1094C40.9345 13.1094 38.1231 10.2989 38.123 6.84375C38.123 3.38852 40.9344 0.577148 44.3896 0.577148ZM44.3896 2.95117C42.2436 2.95117 40.5022 4.69682 40.502 6.83789C40.502 8.97906 42.2485 10.7256 44.3896 10.7256C46.5307 10.7255 48.2773 8.979 48.2773 6.83789C48.2771 4.69688 46.5356 2.95127 44.3896 2.95117Z\" fill=\"#F2C94C\" stroke=\"#F2C94C\" stroke-width=\"0.3\"/>\n<path d=\"M48.5879 13.5684C50.6294 13.5685 52.3846 15.0285 52.7617 17.0371V17.0381L55.9736 34.2324L56.0049 34.4346C56.1313 35.4414 55.8382 36.4525 55.1885 37.2393C54.4948 38.0793 53.4648 38.5614 52.376 38.5615H50.665V49.6982C50.6648 51.7553 48.9926 53.4275 46.9355 53.4277C45.9542 53.4277 45.0613 53.0463 44.3945 52.4248C43.7278 53.0465 42.835 53.4276 41.8535 53.4277C39.7962 53.4277 38.1233 51.7555 38.123 49.6982V38.5615H36.4131C35.3191 38.5615 34.2886 38.0795 33.5947 37.2393C32.9016 36.4 32.6141 35.3053 32.8145 34.2324L36.0205 17.0381C36.3922 15.0287 38.1486 13.5685 40.1953 13.5684H48.5879ZM40.1855 15.9473C39.2863 15.9473 38.5113 16.5917 38.3477 17.4766V17.4775L35.1416 34.6719C35.0718 35.044 35.1693 35.4294 35.415 35.7217C35.6621 36.0154 36.0208 36.1826 36.4023 36.1826H39.3018C39.9561 36.1826 40.4911 36.7177 40.4912 37.3721V49.6924C40.4912 50.4406 41.0991 51.0439 41.8428 51.0439C42.591 51.0439 43.1943 50.4361 43.1943 49.6924V37.7461C43.1945 37.0918 43.7294 36.5566 44.3838 36.5566C45.0381 36.5567 45.5731 37.0918 45.5732 37.7461V49.6982C45.5735 50.4466 46.1764 51.0498 46.9248 51.0498C47.6729 51.0498 48.2761 50.4417 48.2764 49.6982V37.3721C48.2765 36.7177 48.8114 36.1826 49.4658 36.1826H52.3652C52.7468 36.1826 53.1054 36.0154 53.3525 35.7217C53.5982 35.4294 53.6952 35.0447 53.6211 34.6738V34.6719L50.415 17.4775V17.4766C50.2514 16.5917 49.4764 15.9473 48.5771 15.9473H40.1855Z\" fill=\"#F2C94C\" stroke=\"#F2C94C\" stroke-width=\"0.3\"/>\n<path d=\"M27.9414 0.577148C28.601 0.577148 29.1308 1.10706 29.1309 1.7666V52.2383C29.1309 52.8927 28.5958 53.4277 27.9414 53.4277C27.2871 53.4276 26.752 52.8926 26.752 52.2383V1.7666C26.7521 1.11232 27.2871 0.577254 27.9414 0.577148Z\" fill=\"#F2C94C\" stroke=\"#F2C94C\" stroke-width=\"0.3\"/>\n</svg>",
+                "iconType": "svg",
+                "iconSize": 56,
+                "iconColor": "#F59E0B"
+              }
+            ]
+          },
+          "styling": {
+            "layout": {
+              "backgroundColor": "transparent",
+              "maxWidth": "unset"
+            },
+            "spacing": {
+              "spacing": {
+                "desktop": {
+                  "padding": "40px 30px",
+                  "margin": "0 auto"
+                },
+                "mobile": {
+                  "padding": "24px 0px 8px",
+                  "margin": "0 auto"
+                }
+              }
+            },
+            "typography": {
+              "title": {
+                "fontSize": "32px",
+                "fontWeight": "600",
+                "lineHeight": "1.2",
+                "alignment": "center",
+                "color": "var(--primary-text)",
+                "mobile": {
+                  "fontSize": "28px",
+                  "fontWeight": "600",
+                  "lineHeight": "1.2"
+                }
+              },
+              "subtitle": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "lineHeight": "1.5",
+                "alignment": "center",
+                "color": "var(--secondary-text)",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "1.5"
+                }
+              }
+            },
+            "grid": {
+              "columns": 3,
+              "spacing": 32,
+              "mobileColumns": 2,
+              "mobileSpacing": 20
+            },
+            "card": {
+              "title": {
+                "color": "var(--primary-text)",
+                "fontSize": "16px",
+                "fontWeight": "600",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "600",
+                  "lineHeight": "1.2"
+                }
+              },
+              "description": {
+                "color": "var(--secondary-text)",
+                "fontSize": "14px",
+                "fontWeight": "500",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "1.5"
+                }
+              },
+              "viewMore": {
+                "color": "var(--accent-color)",
+                "fontSize": "14px",
+                "fontWeight": "500",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "1.4"
+                }
+              },
+              "backgroundColor": "transparent",
+              "padding": "16px",
+              "borderRadius": "8px",
+              "shadow": false,
+              "shadowType": "medium",
+              "hoverColor": "var(--cards-containers)"
+            }
+          },
+          "advanceSettings": {
+            "sectionAriaLabel": "Our Services",
+            "sectionRole": "region",
+            "sectionId": "services-section",
+            "tabIndex": 0,
+            "dataAttributes": {}
+          },
+          "id": "OurServices-63ddf3d9-3e22-49bd-9955-ef6760332fca"
+        }
+      },
+      {
+        "type": "Testimonials",
+        "props": {
+          "basicContent": {
+            "title": "What Our Customers Say",
+            "subtitle": "Check out our most recent reviews!",
+            "testimonials": [
+              {
+                "id": "1",
+                "name": "Sarah Johnson",
+                "rating": 5,
+                "review": "Good prices, clean, nice staff. Been there 3 times this week trying every one of them is a winner. Just good quality, well prepared, fresh tasty everything. Currently top of my list for Mexican food."
+              },
+              {
+                "id": "2",
+                "name": "John Smith",
+                "rating": 5,
+                "review": "Excellent pizza! I ordered delivery, a large pepperoni and mushroom and my kid a small pepperoni. Cheese is well proportioned and snappy, crust is crispy and well cooked without being burnt. Toppings were also excellent, loved highly recommend."
+              },
+              {
+                "id": "3",
+                "name": "Emily Davis",
+                "rating": 5,
+                "review": "Amazing food and excellent service. The fish and chips were absolutely perfect. Cheese is well proportioned and snappy, crust is crispy and well cooked without being burnt. Toppings were also excellent, loved highly recommend."
+              }
+            ],
+            "button": {
+              "text": "View More",
+              "link": "#reviews"
+            }
+          },
+          "styling": {
+            "layout": {
+              "maxWidth": "100%",
+              "backgroundColor": "#FAF9F1"
+            },
+            "spacing": {
+              "desktop": {
+                "padding": "40px 30px",
+                "margin": "0 auto"
+              },
+              "mobile": {
+                "padding": "24px 16px",
+                "margin": "0"
+              }
+            },
+            "typography": {
+              "title": {
+                "fontSize": "32px",
+                "fontWeight": "600",
+                "lineHeight": "1.2",
+                "color": "var(--primary-text)",
+                "alignment": "center",
+                "mobile": {
+                  "fontSize": "24px",
+                  "fontWeight": "600",
+                  "lineHeight": "1.2",
+                  "color": "var(--primary-text)"
+                }
+              },
+              "subtitle": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "lineHeight": "1.5",
+                "color": "var(--secondary-text)",
+                "alignment": "center",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "1.5",
+                  "color": "var(--secondary-text)"
+                }
+              }
+            },
+            "rating": {
+              "fontSize": "16px",
+              "color": "var(--secondary-text)",
+              "starColor": "var(--primary-color)",
+              "alignment": "left",
+              "mobile": {
+                "fontSize": "14px",
+                "color": "var(--secondary-text)",
+                "starColor": "var(--primary-color)"
+              }
+            },
+            "card": {
+              "backgroundColor": "var(--cards-containers)",
+              "borderRadius": "10px",
+              "padding": "24px",
+              "review": {
+                "fontSize": "14px",
+                "color": "var(--secondary-text)",
+                "fontWeight": "400",
+                "lineHeight": "1.5",
+                "mobile": {
+                  "fontSize": "14px",
+                  "color": "var(--secondary-text)",
+                  "fontWeight": "400",
+                  "lineHeight": "1.5"
+                }
+              },
+              "location": {
+                "fontSize": "16px",
+                "color": "var(--primary-text)",
+                "fontWeight": "600",
+                "lineHeight": "1.5",
+                "mobile": {
+                  "fontSize": "14px",
+                  "color": "var(--primary-text)",
+                  "fontWeight": "600",
+                  "lineHeight": "1.5"
+                }
+              }
+            },
+            "button": {
+              "backgroundColor": "transparent",
+              "textColor": "var(--primary-text)",
+              "fontWeight": "600",
+              "fontSize": "16px",
+              "height": "48px",
+              "width": "auto",
+              "borderRadius": "8px",
+              "padding": "10px 22px",
+              "boxShadow": "none",
+              "mobile": {
+                "backgroundColor": "transparent",
+                "textColor": "var(--primary-text)",
+                "fontWeight": "600",
+                "fontSize": "14px",
+                "height": "44px",
+                "width": "auto",
+                "borderRadius": "8px",
+                "padding": "10px 22px",
+                "boxShadow": "none"
+              }
+            }
+          },
+          "advanceSettings": {
+            "ratings": {
+              "showGoogleRating": true,
+              "googleRating": 4.8,
+              "googleRatingText": "4.8/5 on Google Reviews"
+            },
+            "cardSettings": {
+              "boxShadow": true
+            },
+            "buttonSettings": {
+              "showButton": true,
+              "target": "_self",
+              "rel": "noopener noreferrer"
+            },
+            "accessibility": {
+              "ariaLabel": "Customer testimonials section",
+              "role": "region",
+              "tabIndex": 0
+            },
+            "filterModeratedReviews": false,
+            "maxTestimonials": 6,
+            "loading": false,
+            "error": null,
+            "totalReviews": 0
+          },
+          "id": "Testimonials-01e1a780-dc78-4527-a903-fe9730b6615d",
+          "resolvedData": {
+            "testimonials": [
+              {
+                "id": "108",
+                "name": "Sanjay Appscrip",
+                "rating": 4.333333333333333,
+                "review": "Rate Restaurant",
+                "avatar": "",
+                "location": "",
+                "orderId": "ORD-20250714-4",
+                "createdAt": 1752480038,
+                "status": "active"
+              },
+              {
+                "id": "104",
+                "name": "Saransh  Shandlya",
+                "rating": 4,
+                "review": "Amazing customer service and fast delivery.",
+                "avatar": "",
+                "location": "",
+                "orderId": "2110111wwxw1xsx1cd",
+                "createdAt": 1751978300,
+                "status": "active"
+              },
+              {
+                "id": "103",
+                "name": "Saransh  Shandlya",
+                "rating": 4,
+                "review": "Amazing customer service and fast delivery.",
+                "avatar": "",
+                "location": "",
+                "orderId": "2110111www1xsx1cd",
+                "createdAt": 1751977690,
+                "status": "active"
+              },
+              {
+                "id": "101",
+                "name": "Eshwari Appscrip",
+                "rating": 4.166666666666667,
+                "review": "This store pays great attention to packaging. My order arrived in sturdy, eco-friendly containers, and everything was neatly organized with no spills or mess. The care taken in packing made me feel valued as a customer. It’s little details like these that make me want to order again. I’m always impressed by the consistent quality this store delivers. Every order I’ve placed has been delicious, and today was no exception. The ingredients tasted fresh, and the flavors were well-balanced. I can always count on this place for a satisfying meal.",
+                "avatar": "",
+                "location": "",
+                "orderId": "ORD-20250610-67",
+                "createdAt": 1751525801,
+                "status": "active"
+              },
+              {
+                "id": "100",
+                "name": "Guest User",
+                "rating": 4,
+                "review": "Amazing customer service and fast delivery.",
+                "avatar": "",
+                "location": "",
+                "orderId": "211011xs22333333dc33",
+                "createdAt": 1751455498,
+                "status": "active"
+              },
+              {
+                "id": "99",
+                "name": "Saransh  Shandlya",
+                "rating": 4,
+                "review": "Amazing customer service and fast delivery.",
+                "avatar": "",
+                "location": "",
+                "orderId": "2110111www1x33",
+                "createdAt": 1751280614,
+                "status": "active"
+              }
+            ],
+            "loading": false,
+            "error": null,
+            "totalReviews": 10
+          }
+        }
+      },
+      {
+        "type": "MediaContent",
+        "props": {
+          "basic": {
+            "title": "Meet Our Experienced Chefs",
+            "description": "At The Golden Spoon, our chefs blend culinary mastery with a deep respect for tradition. With years of experience and a passion for innovation, they craft every dish with precision and heart. Get to know the team behind your favourite flavours.",
+            "image": {
+              "url": "https://res.cloudinary.com/dtg06lpdc/image/upload/v1753260035/meet-the-chefs_mmcrwa.png"
+            },
+            "button": {
+              "text": "Order Now",
+              "link": "/order"
+            }
+          },
+          "styling": {
+            "layout": {
+              "maxWidth": "100%",
+              "backgroundColor": "transparent"
+            },
+            "spacing": {
+              "desktop": {
+                "padding": "40px 30px",
+                "margin": "0"
+              },
+              "mobile": {
+                "padding": "24px 16px",
+                "margin": "0"
+              }
+            },
+            "typography": {
+              "title": {
+                "fontSize": "56px",
+                "fontWeight": "600",
+                "lineHeight": "1.2",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "28px",
+                  "fontWeight": "600",
+                  "lineHeight": "1.2"
+                }
+              },
+              "description": {
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "lineHeight": "1.3",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "400",
+                  "lineHeight": "1.3"
+                }
+              }
+            },
+            "image": {
+              "position": "left",
+              "objectFit": "cover",
+              "borderRadius": "20px",
+              "maxWidth": "400px",
+              "mobile": {
+                "borderRadius": "14px",
+                "maxWidth": "100%",
+                "objectFit": "cover",
+                "position": "first"
+              }
+            },
+            "button": {
+              "backgroundColor": "var(--primary-color)",
+              "textColor": "#000000",
+              "fontWeight": "600",
+              "fontSize": "16px",
+              "height": "auto",
+              "width": "auto",
+              "borderRadius": "8px",
+              "padding": "10px 22px",
+              "boxShadow": "none",
+              "mobile": {
+                "backgroundColor": "var(--primary-color)",
+                "textColor": "#000000",
+                "fontWeight": "600",
+                "fontSize": "14px",
+                "height": "auto",
+                "width": "auto",
+                "borderRadius": "8px",
+                "padding": "10px 22px",
+                "boxShadow": "none"
+              }
+            }
+          },
+          "advanced": {
+            "accessibility": {
+              "ariaLabel": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "role": "region"
+            },
+            "imageSettings": {
+              "lazyLoad": true,
+              "altText": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "title": "British Cuisine",
+              "ariaLabel": "British cuisine dish featuring fish and chips with traditional accompaniments",
+              "aspectRatio": {
+                "desktop": "custom",
+                "mobile": "custom",
+                "custom": {
+                  "desktop": "440/380",
+                  "mobile": "343/305"
+                }
+              }
+            },
+            "buttonSettings": {
+              "target": "_self",
+              "rel": "noopener noreferrer",
+              "showButton": false
+            }
+          },
+          "id": "MediaContent-d9b6a541-ace7-459f-a727-3328665bc125"
+        }
+      },
+      {
+        "type": "VisitUs",
+        "props": {
+          "basicContent": {
+            "title": "Visit Us",
+            "subtitle": "Come and experience our warm hospitality",
+            "button": {
+              "text": "Get Directions",
+              "link": "https://maps.google.com"
+            },
+            "notes": "Kitchen closes 30 minutes before closing time"
+          },
+          "styling": {
+            "layout": {
+              "backgroundColor": "transparent",
+              "padding": "40px 30px",
+              "margin": "0 auto",
+              "maxWidth": "100%",
+              "mobile": {
+                "backgroundColor": "transparent",
+                "padding": "24px 16px",
+                "margin": "0 auto",
+                "maxWidth": "100%"
+              }
+            },
+            "typography": {
+              "title": {
+                "fontSize": "40px",
+                "fontWeight": "600",
+                "color": "var(--primary-text)",
+                "lineHeight": "1.2",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "24px",
+                  "fontWeight": "600",
+                  "color": "var(--primary-text)",
+                  "lineHeight": "1.2",
+                  "alignment": "center"
+                }
+              },
+              "subtitle": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "var(--secondary-text)",
+                "lineHeight": "1.3",
+                "alignment": "left",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "color": "var(--secondary-text)",
+                  "lineHeight": "1.3",
+                  "alignment": "center"
+                }
+              }
+            },
+            "tabsContainer": {
+              "gap": "20px",
+              "maxWidth": "100%",
+              "activeTabColor": "var(--primary-text)",
+              "activeTabBackground": "#F2C94C33",
+              "inactiveTabColor": "var(--secondary-text)",
+              "inactiveTabBackground": "transparent",
+              "activeTabBorder": "var(--primary-color)",
+              "mobile": {
+                "gap": "12px",
+                "maxWidth": "100%",
+                "activeTabColor": "var(--primary-text)",
+                "activeTabBackground": "#F2C94C33",
+                "inactiveTabColor": "var(--secondary-text)",
+                "inactiveTabBackground": "transparent",
+                "activeTabBorder": "var(--primary-color)"
+              }
+            },
+            "contactStyling": {
+              "icon": {
+                "size": "20px",
+                "color": "var(--primary-color)"
+              },
+              "label": {
+                "fontSize": "16px",
+                "fontWeight": "600",
+                "color": "var(--primary-text)",
+                "lineHeight": "1.3",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "600",
+                  "color": "var(--primary-text)",
+                  "lineHeight": "1.3"
+                }
+              },
+              "text": {
+                "fontSize": "14px",
+                "fontWeight": "600",
+                "color": "var(--secondary-text)",
+                "lineHeight": "1.3",
+                "mobile": {
+                  "fontSize": "12px",
+                  "fontWeight": "600",
+                  "color": "var(--secondary-text)",
+                  "lineHeight": "1.3"
+                }
+              }
+            },
+            "button": {
+              "height": "48px",
+              "width": "auto",
+              "backgroundColor": "var(--primary-color)",
+              "textColor": "#000000",
+              "borderRadius": "8px",
+              "fontSize": "16px",
+              "fontWeight": "600",
+              "padding": "10px 22px",
+              "borderColor": "var(--primary-color)",
+              "mobile": {
+                "height": "44px",
+                "width": "auto",
+                "backgroundColor": "var(--primary-color)",
+                "textColor": "#000000",
+                "borderRadius": "8px",
+                "fontSize": "14px",
+                "fontWeight": "600",
+                "padding": "10px 22px",
+                "borderColor": "var(--primary-color)"
+              }
+            }
+          },
+          "advanceSettings": {
+            "locations": [
+              {
+                "id": "london",
+                "name": "London",
+                "mapImage": "https://via.placeholder.com/400x300/e5e5e5/999999?text=Map+Placeholder",
+                "contact": {
+                  "phone": "+44 20 7123 4567",
+                  "address": "Unit GS26/27 Lower Mall,\nThe Atrium, Union Square,\nAberdeen AB11 5PS"
+                },
+                "openingHours": [
+                  {
+                    "day": "Monday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Tuesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Wednesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Thursday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Friday",
+                    "hours": "12:00 PM - 11:00 PM"
+                  },
+                  {
+                    "day": "Saturday",
+                    "hours": "11:00 AM - 11:00 PM"
+                  },
+                  {
+                    "day": "Sunday",
+                    "hours": "11:00 AM - 09:00 PM"
+                  }
+                ],
+                "notes": "Kitchen closes 30 minutes before closing time",
+                "getDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=51.523767,-0.158555"
+              },
+              {
+                "id": "manchester",
+                "name": "Manchester",
+                "mapImage": "https://via.placeholder.com/400x300/e5e5e5/999999?text=Manchester+Map",
+                "contact": {
+                  "phone": "+44 161 123 4567",
+                  "address": "123 Market Street,\nNorthern Quarter,\nManchester M1 1AA"
+                },
+                "openingHours": [
+                  {
+                    "day": "Monday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Tuesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Wednesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Thursday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Friday",
+                    "hours": "12:00 PM - 11:00 PM"
+                  },
+                  {
+                    "day": "Saturday",
+                    "hours": "11:00 AM - 11:00 PM"
+                  },
+                  {
+                    "day": "Sunday",
+                    "hours": "11:00 AM - 09:00 PM"
+                  }
+                ],
+                "notes": "Kitchen closes 30 minutes before closing time",
+                "getDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=53.480759,-2.242631"
+              },
+              {
+                "id": "birmingham",
+                "name": "Birmingham",
+                "mapImage": "https://via.placeholder.com/400x300/e5e5e5/999999?text=Birmingham+Map",
+                "contact": {
+                  "phone": "+44 121 123 4567",
+                  "address": "456 High Street,\nBirmingham City Centre,\nBirmingham B1 2AA"
+                },
+                "openingHours": [
+                  {
+                    "day": "Monday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Tuesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Wednesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Thursday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Friday",
+                    "hours": "12:00 PM - 11:00 PM"
+                  },
+                  {
+                    "day": "Saturday",
+                    "hours": "11:00 AM - 11:00 PM"
+                  },
+                  {
+                    "day": "Sunday",
+                    "hours": "11:00 AM - 09:00 PM"
+                  }
+                ],
+                "notes": "Kitchen closes 30 minutes before closing time",
+                "getDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=52.47863,-1.893611"
+              },
+              {
+                "id": "liverpool",
+                "name": "Liverpool",
+                "mapImage": "https://via.placeholder.com/400x300/e5e5e5/999999?text=Liverpool+Map",
+                "contact": {
+                  "phone": "+44 151 123 4567",
+                  "address": "789 Bold Street,\nLiverpool City Centre,\nLiverpool L1 4HY"
+                },
+                "openingHours": [
+                  {
+                    "day": "Monday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Tuesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Wednesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Thursday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Friday",
+                    "hours": "12:00 PM - 11:00 PM"
+                  },
+                  {
+                    "day": "Saturday",
+                    "hours": "11:00 AM - 11:00 PM"
+                  },
+                  {
+                    "day": "Sunday",
+                    "hours": "11:00 AM - 09:00 PM"
+                  }
+                ],
+                "notes": "Kitchen closes 30 minutes before closing time",
+                "getDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=53.400002,-2.993333"
+              },
+              {
+                "id": "leeds",
+                "name": "Leeds",
+                "mapImage": "https://via.placeholder.com/400x300/e5e5e5/999999?text=Leeds+Map",
+                "contact": {
+                  "phone": "+44 113 123 4567",
+                  "address": "321 Briggate,\nLeeds City Centre,\nLeeds LS1 6AZ"
+                },
+                "openingHours": [
+                  {
+                    "day": "Monday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Tuesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Wednesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Thursday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Friday",
+                    "hours": "12:00 PM - 11:00 PM"
+                  },
+                  {
+                    "day": "Saturday",
+                    "hours": "11:00 AM - 11:00 PM"
+                  },
+                  {
+                    "day": "Sunday",
+                    "hours": "11:00 AM - 09:00 PM"
+                  }
+                ],
+                "notes": "Kitchen closes 30 minutes before closing time",
+                "getDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=53.797418,-1.535328"
+              },
+              {
+                "id": "glasgow",
+                "name": "Glasgow",
+                "mapImage": "https://via.placeholder.com/400x300/e5e5e5/999999?text=Glasgow+Map",
+                "contact": {
+                  "phone": "+44 141 123 4567",
+                  "address": "654 Sauchiehall Street,\nGlasgow City Centre,\nGlasgow G2 3AH"
+                },
+                "openingHours": [
+                  {
+                    "day": "Monday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Tuesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Wednesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Thursday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Friday",
+                    "hours": "12:00 PM - 11:00 PM"
+                  },
+                  {
+                    "day": "Saturday",
+                    "hours": "11:00 AM - 11:00 PM"
+                  },
+                  {
+                    "day": "Sunday",
+                    "hours": "11:00 AM - 09:00 PM"
+                  }
+                ],
+                "notes": "Kitchen closes 30 minutes before closing time",
+                "getDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=55.861111,-4.250833"
+              },
+              {
+                "id": "bristol",
+                "name": "Bristol",
+                "mapImage": "https://via.placeholder.com/400x300/e5e5e5/999999?text=Bristol+Map",
+                "contact": {
+                  "phone": "+44 117 123 4567",
+                  "address": "987 Park Street,\nClifton Village,\nBristol BS1 5PB"
+                },
+                "openingHours": [
+                  {
+                    "day": "Monday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Tuesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Wednesday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Thursday",
+                    "hours": "12:00 PM - 10:00 PM"
+                  },
+                  {
+                    "day": "Friday",
+                    "hours": "12:00 PM - 11:00 PM"
+                  },
+                  {
+                    "day": "Saturday",
+                    "hours": "11:00 AM - 11:00 PM"
+                  },
+                  {
+                    "day": "Sunday",
+                    "hours": "11:00 AM - 09:00 PM"
+                  }
+                ],
+                "notes": "Kitchen closes 30 minutes before closing time",
+                "getDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=51.455041,-2.605551"
+              }
+            ],
+            "buttonSettings": {
+              "target": "_blank",
+              "rel": "noopener noreferrer",
+              "showButton": true,
+              "variant": "filled"
+            },
+            "accessibility": {
+              "ariaLabel": "Visit us section with location information",
+              "role": "region"
+            },
+            "coordinates": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "id": "VisitUs-a3c8f303-7f32-494e-9c86-92836f2602f6",
+          "resolvedData": {
+            "storeData": {
+              "status": "Request successfully completed",
+              "message": "Success",
+              "data": [
+                {
+                  "id": "67c7f16ae5eed58c7519a643",
+                  "name": "Subway - Rajajinagar",
+                  "slug": "subway-rajajinagar",
+                  "address": {
+                    "id": "000000000000000000000000",
+                    "address": "4/5, 1st Block , Rajajinagar, Bengaluru, Karnataka India, 560010",
+                    "addressLine2": "1st Block , Rajajinagar",
+                    "landmark": "",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area": "Rajajinagar",
+                    "zipCode": "560010",
+                    "coordinates": {
+                      "latitude": 12.9981732,
+                      "longitude": 77.55304459999999
+                    }
+                  },
+                  "overallRatings": {
+                    "average": 3.33,
+                    "totalReview": 18
+                  },
+                  "rating": {
+                    "average": 0,
+                    "totalReview": 0
+                  },
+                  "pickupSettings": {
+                    "selfPickup": true,
+                    "orderPickupLableAtCheckOut": "selfPickup",
+                    "description": "John's Restaurant is a family-owned restaurant that specializes in Italian cuisine.",
+                    "pickupChargeAmount": 0,
+                    "askForPickupDateAndTimeAtCheckout": true,
+                    "orderFullfillmentTime": {
+                      "time": 1,
+                      "timeUnit": "HOUR"
+                    },
+                    "customerPickupDateTime": "PICKUP_DATE",
+                    "allowChoosingPickupDateWithIn": {
+                      "time": 1,
+                      "timeUnit": "YEAR"
+                    }
+                  },
+                  "menuPeriods": [
+                    {
+                      "slug": "all-day",
+                      "type": "All Day",
+                      "isOpen": true,
+                      "openTime": "12:00 AM",
+                      "closeTime": "11:55 PM",
+                      "sortOrder": 0
+                    }
+                  ],
+                  "distances": {
+                    "distance": 1205.9355,
+                    "unit": "km"
+                  },
+                  "deliveryFeeSettings": {
+                    "isActive": true,
+                    "freeDeliveryForOrderOver": 1000,
+                    "minimumOrderValue": 10,
+                    "deliveryRadius": 8,
+                    "deliveryFeeLogic": "DISTANCE_BASED",
+                    "distanceBasedFees": [
+                      {
+                        "minimumDistance": 0,
+                        "maximumDistance": 3,
+                        "fee": 30,
+                        "feeType": "Flat Fee"
+                      },
+                      {
+                        "minimumDistance": 3,
+                        "maximumDistance": 6,
+                        "fee": 60,
+                        "feeType": "Flat Fee"
+                      },
+                      {
+                        "minimumDistance": 6,
+                        "maximumDistance": 8,
+                        "fee": 80,
+                        "feeType": "Flat Fee"
+                      }
+                    ]
+                  },
+                  "payment": [
+                    {
+                      "enableAtCheckout": true,
+                      "nameAtCheckout": "Pay By Cash",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": true,
+                        "delivery": true,
+                        "dineIn": false,
+                        "preOrderEnabled": false
+                      },
+                      "autoAcceptOrder": false,
+                      "method": "PayByCash",
+                      "instructions": "",
+                      "stripeConnected": false
+                    },
+                    {
+                      "enableAtCheckout": true,
+                      "nameAtCheckout": "Credit Or Debit Card",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": true,
+                        "delivery": true,
+                        "dineIn": false,
+                        "preOrderEnabled": false
+                      },
+                      "autoAcceptOrder": true,
+                      "method": "CreditOrDebitCard",
+                      "instructions": "",
+                      "stripeConnected": false
+                    },
+                    {
+                      "enableAtCheckout": true,
+                      "nameAtCheckout": "Cash Wallet",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": true,
+                        "delivery": false,
+                        "dineIn": false,
+                        "preOrderEnabled": false
+                      },
+                      "autoAcceptOrder": false,
+                      "method": "CashWallet",
+                      "instructions": "Pay using your digital wallet balance"
+                    },
+                    {
+                      "enableAtCheckout": true,
+                      "nameAtCheckout": "Loyalty Points",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": false,
+                        "delivery": true,
+                        "dineIn": false,
+                        "preOrderEnabled": true
+                      },
+                      "autoAcceptOrder": false,
+                      "method": "LoyaltyPoint",
+                      "instructions": "Redeem your loyalty points for this order"
+                    }
+                  ],
+                  "workingHours": [
+                    {
+                      "day": "Monday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Tuesday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Wednesday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Thursday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Friday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Saturday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Sunday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    }
+                  ],
+                  "areaSlug": "rajajinagar",
+                  "citySlug": "bengaluru"
+                },
+                {
+                  "id": "67c69d52161c585e94ab9854",
+                  "name": "Subway - RT nagar",
+                  "slug": "subway-bengaluru-rt-nagar",
+                  "address": {
+                    "id": "000000000000000000000000",
+                    "address": "Siroya Sunshine, KHB Colony Main Road , RT Nagar, Bengaluru, Karnataka India, 560032",
+                    "addressLine2": "KHB Colony Main Road , RT Nagar",
+                    "landmark": "",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area": "RT Nagar",
+                    "zipCode": "560032",
+                    "type": "Others",
+                    "coordinates": {
+                      "latitude": 13.0247291,
+                      "longitude": 77.5947532
+                    }
+                  },
+                  "overallRatings": {
+                    "average": 3.8,
+                    "totalReview": 28
+                  },
+                  "rating": {
+                    "average": 0,
+                    "totalReview": 0
+                  },
+                  "pickupSettings": {
+                    "selfPickup": true,
+                    "orderPickupLableAtCheckOut": "",
+                    "description": "",
+                    "pickupChargeAmount": 0,
+                    "askForPickupDateAndTimeAtCheckout": false,
+                    "orderFullfillmentTime": {},
+                    "customerPickupDateTime": "",
+                    "allowChoosingPickupDateWithIn": {}
+                  },
+                  "menuPeriods": [
+                    {
+                      "id": "67ee171c6b179959bf679d9f",
+                      "slug": "breakfast",
+                      "type": "Breakfast",
+                      "isOpen": false,
+                      "openTime": "08:00 AM",
+                      "closeTime": "10:30 AM",
+                      "sortOrder": 1
+                    },
+                    {
+                      "id": "67ee175c6b179959bf679da0",
+                      "slug": "brunch",
+                      "type": "Brunch",
+                      "isOpen": false,
+                      "openTime": "10:30 AM",
+                      "closeTime": "12:30 PM",
+                      "sortOrder": 2
+                    },
+                    {
+                      "id": "67ee17bb6b179959bf679da1",
+                      "slug": "lunch",
+                      "type": "Lunch",
+                      "isOpen": false,
+                      "openTime": "12:30 PM",
+                      "closeTime": "04:00 PM",
+                      "sortOrder": 3
+                    },
+                    {
+                      "id": "67ee181e6b179959bf679da2",
+                      "slug": "snacks",
+                      "type": "Snacks",
+                      "isOpen": false,
+                      "openTime": "04:00 PM",
+                      "closeTime": "06:00 PM",
+                      "sortOrder": 4
+                    },
+                    {
+                      "id": "67ee186f6b179959bf679da3",
+                      "slug": "dinner",
+                      "type": "Dinner",
+                      "isOpen": false,
+                      "openTime": "07:00 PM",
+                      "closeTime": "10:00 PM",
+                      "sortOrder": 5
+                    }
+                  ],
+                  "distances": {
+                    "distance": 1210.3413999999998,
+                    "unit": "km"
+                  },
+                  "deliveryFeeSettings": {
+                    "isActive": true,
+                    "freeDeliveryForOrderOver": 1000,
+                    "minimumOrderValue": 100,
+                    "deliveryRadius": 10000,
+                    "deliveryFeeLogic": "DISTANCE_BASED",
+                    "distanceBasedFees": [
+                      {
+                        "minimumDistance": 0,
+                        "maximumDistance": 3,
+                        "fee": 50,
+                        "feeType": "Flat Fee"
+                      },
+                      {
+                        "minimumDistance": 3,
+                        "maximumDistance": 6,
+                        "fee": 80,
+                        "feeType": "Flat Fee"
+                      },
+                      {
+                        "minimumDistance": 6,
+                        "maximumDistance": 8,
+                        "fee": 100,
+                        "feeType": "Flat Fee"
+                      },
+                      {
+                        "minimumDistance": 8,
+                        "maximumDistance": 10,
+                        "fee": 130,
+                        "feeType": "Flat Fee"
+                      }
+                    ]
+                  },
+                  "payment": [
+                    {
+                      "enableAtCheckout": true,
+                      "nameAtCheckout": "Pay By Cash",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": true,
+                        "delivery": true,
+                        "dineIn": false,
+                        "preOrderEnabled": false
+                      },
+                      "autoAcceptOrder": false,
+                      "method": "PayByCash",
+                      "instructions": "",
+                      "stripeConnected": false
+                    },
+                    {
+                      "enableAtCheckout": false,
+                      "nameAtCheckout": "Credit Or Debit Card",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": true,
+                        "delivery": true,
+                        "dineIn": true,
+                        "preOrderEnabled": false
+                      },
+                      "autoAcceptOrder": false,
+                      "method": "CreditOrDebitCard",
+                      "instructions": "",
+                      "stripeConnected": true
+                    },
+                    {
+                      "enableAtCheckout": false,
+                      "nameAtCheckout": "",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": false,
+                        "delivery": false,
+                        "dineIn": false,
+                        "preOrderEnabled": false
+                      },
+                      "autoAcceptOrder": false,
+                      "method": "CashWallet",
+                      "instructions": ""
+                    },
+                    {
+                      "enableAtCheckout": false,
+                      "nameAtCheckout": "",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": false,
+                        "delivery": false,
+                        "dineIn": false,
+                        "preOrderEnabled": false
+                      },
+                      "autoAcceptOrder": false,
+                      "method": "LoyaltyPoint",
+                      "instructions": ""
+                    }
+                  ],
+                  "workingHours": [
+                    {
+                      "day": "Monday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00",
+                          "endTime": "11:55"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Tuesday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00",
+                          "endTime": "11:55"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Wednesday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00",
+                          "endTime": "11:55"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Thursday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00",
+                          "endTime": "11:55"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Friday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00",
+                          "endTime": "11:55"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Saturday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00",
+                          "endTime": "11:55"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Sunday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:00",
+                          "endTime": "11:55"
+                        }
+                      ],
+                      "isOpen": true
+                    }
+                  ],
+                  "areaSlug": "rt-nagar",
+                  "citySlug": "bengaluru"
+                },
+                {
+                  "id": "67c6b0b20b0dd4c6805bdbd3",
+                  "name": "Subway - indiranagar",
+                  "slug": "subway-bengaluru-indiranagar",
+                  "address": {
+                    "id": "000000000000000000000000",
+                    "address": "Surabhi Beauty Parlour, 4th Cross Road , Indiranagar, Bengaluru, Karnataka India, 560038",
+                    "addressLine2": "4th Cross Road , Indiranagar",
+                    "landmark": "",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area": "",
+                    "zipCode": "560038",
+                    "type": "Others",
+                    "coordinates": {
+                      "latitude": 12.9722197,
+                      "longitude": 77.64412659999999
+                    }
+                  },
+                  "overallRatings": {
+                    "average": 0,
+                    "totalReview": 0
+                  },
+                  "rating": {
+                    "average": 0,
+                    "totalReview": 0
+                  },
+                  "pickupSettings": {
+                    "selfPickup": false,
+                    "orderPickupLableAtCheckOut": "",
+                    "description": "",
+                    "pickupChargeAmount": 0,
+                    "askForPickupDateAndTimeAtCheckout": false,
+                    "orderFullfillmentTime": {},
+                    "customerPickupDateTime": "",
+                    "allowChoosingPickupDateWithIn": {}
+                  },
+                  "menuPeriods": [
+                    {
+                      "id": "67f4b641e557cb5b87ba19b4",
+                      "slug": "lunch",
+                      "type": "Lunch ",
+                      "isOpen": false,
+                      "openTime": "12:00 PM",
+                      "closeTime": "02:00 PM",
+                      "sortOrder": 2
+                    },
+                    {
+                      "id": "67f4b779e557cb5b87ba19b8",
+                      "slug": "dinner",
+                      "type": "Dinner",
+                      "isOpen": false,
+                      "openTime": "07:00 PM",
+                      "closeTime": "10:00 PM",
+                      "sortOrder": 3
+                    },
+                    {
+                      "id": "683049924de3c85eb484324f",
+                      "slug": "breakfast",
+                      "type": "BreakFast",
+                      "isOpen": false,
+                      "openTime": "07:40 AM",
+                      "closeTime": "11:55 AM",
+                      "sortOrder": 3
+                    }
+                  ],
+                  "distances": {
+                    "distance": 1217.4874,
+                    "unit": "km"
+                  },
+                  "deliveryFeeSettings": {
+                    "isActive": false,
+                    "freeDeliveryForOrderOver": 0,
+                    "minimumOrderValue": 0,
+                    "deliveryRadius": 0,
+                    "deliveryFeeLogic": "DISTANCE_BASED",
+                    "distanceBasedFees": [
+                      {
+                        "minimumDistance": 1,
+                        "maximumDistance": 2,
+                        "fee": 0,
+                        "feeType": "Flat Fee"
+                      }
+                    ]
+                  },
+                  "payment": [
+                    {
+                      "enableAtCheckout": false,
+                      "nameAtCheckout": "Pay By Cash",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": false,
+                        "delivery": false,
+                        "dineIn": false,
+                        "preOrderEnabled": false
+                      },
+                      "autoAcceptOrder": false,
+                      "method": "PayByCash",
+                      "instructions": "",
+                      "stripeConnected": false
+                    },
+                    {
+                      "enableAtCheckout": true,
+                      "nameAtCheckout": "Credit Or Debit Card",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": false,
+                        "delivery": false,
+                        "dineIn": false,
+                        "preOrderEnabled": false
+                      },
+                      "autoAcceptOrder": false,
+                      "method": "CreditOrDebitCard",
+                      "instructions": "",
+                      "stripeConnected": false
+                    },
+                    {
+                      "enableAtCheckout": false,
+                      "nameAtCheckout": "",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": false,
+                        "delivery": false,
+                        "dineIn": false,
+                        "preOrderEnabled": false
+                      },
+                      "autoAcceptOrder": false,
+                      "method": "CashWallet",
+                      "instructions": ""
+                    },
+                    {
+                      "enableAtCheckout": false,
+                      "nameAtCheckout": "",
+                      "isSaveCard": false,
+                      "serviceOptions": {
+                        "pickup": false,
+                        "delivery": false,
+                        "dineIn": false,
+                        "preOrderEnabled": false
+                      },
+                      "autoAcceptOrder": false,
+                      "method": "LoyaltyPoint",
+                      "instructions": ""
+                    }
+                  ],
+                  "workingHours": [
+                    {
+                      "day": "Monday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:01 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Tuesday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:01 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Wednesday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:01 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Thursday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:01 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Friday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:01 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Saturday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:01 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    },
+                    {
+                      "day": "Sunday",
+                      "timeSlots": [
+                        {
+                          "startTime": "12:01 AM",
+                          "endTime": "11:55 PM"
+                        }
+                      ],
+                      "isOpen": true
+                    }
+                  ],
+                  "areaSlug": "indiranagar",
+                  "citySlug": "bengaluru"
+                }
+              ],
+              "totalCount": 3
+            },
+            "loading": false,
+            "error": null
+          }
+        }
+      },
+      {
+        "type": "FAQSection",
+        "props": {
+          "basicContent": {
+            "title": "Frequently Asked Questions",
+            "subtitle": "Everything you need to know about dining with us"
+          },
+          "styling": {
+            "layout": {
+              "backgroundColor": "transparent",
+              "maxWidth": "100%",
+              "mobile": {
+                "maxWidth": "100%",
+                "backgroundColor": "transparent"
+              }
+            },
+            "spacing": {
+              "padding": "40px 80px",
+              "margin": "0 auto",
+              "mobile": {
+                "padding": "24px 16px",
+                "margin": "0 auto"
+              }
+            },
+            "typography": {
+              "title": {
+                "fontSize": "40px",
+                "fontWeight": "600",
+                "color": "var(--primary-text)",
+                "lineHeight": "1.2",
+                "alignment": "center",
+                "mobile": {
+                  "fontSize": "24px",
+                  "fontWeight": "600",
+                  "color": "var(--primary-text)",
+                  "lineHeight": "1.2",
+                  "alignment": "center"
+                }
+              },
+              "subtitle": {
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "color": "var(--secondary-text)",
+                "lineHeight": "1.3",
+                "alignment": "center",
+                "mobile": {
+                  "fontSize": "14px",
+                  "fontWeight": "400",
+                  "color": "var(--secondary-text)",
+                  "lineHeight": "1.3",
+                  "alignment": "center"
+                }
+              },
+              "faq": {
+                "question": {
+                  "fontSize": "16px",
+                  "fontWeight": "600",
+                  "color": "var(--primary-text)",
+                  "lineHeight": "1.3",
+                  "mobile": {
+                    "fontSize": "14px",
+                    "fontWeight": "600",
+                    "color": "var(--primary-text)",
+                    "lineHeight": "1.3"
+                  }
+                },
+                "answer": {
+                  "fontSize": "14px",
+                  "fontWeight": "400",
+                  "color": "var(--secondary-text)",
+                  "lineHeight": "1.3",
+                  "mobile": {
+                    "fontSize": "12px",
+                    "fontWeight": "400",
+                    "color": "var(--secondary-text)",
+                    "lineHeight": "1.3"
+                  }
+                }
+              }
+            }
+          },
+          "advanceSettings": {
+            "faqs": [
+              {
+                "question": "Do you accept reservations?",
+                "answer": "Yes, we accept reservations for parties of all sizes. You can book a table by calling us at +44 20 7123 4567 or using our online booking system. We recommend booking in advance, especially for weekend dinners."
+              },
+              {
+                "question": "Do you offer vegetarian and vegan options?",
+                "answer": "Absolutely! We have a wide variety of vegetarian and vegan dishes on our menu. Our chefs are happy to accommodate dietary restrictions and preferences."
+              },
+              {
+                "question": "Is parking available?",
+                "answer": "Yes, we have a small parking area available for our customers. There's also street parking available nearby."
+              },
+              {
+                "question": "What are your opening hours?",
+                "answer": "We are open Monday to Sunday from 11:00 AM to 10:00 PM. On weekends, we extend our hours until 11:00 PM."
+              },
+              {
+                "question": "Do you offer delivery services?",
+                "answer": "Yes, we offer delivery through our own delivery service and partner with major food delivery platforms. Delivery times typically range from 30-45 minutes."
+              },
+              {
+                "question": "Can you accommodate large groups?",
+                "answer": "Yes, we can accommodate large groups and special events. Please contact us in advance to make arrangements and ensure we can provide the best experience for your group."
+              }
+            ],
+            "accordion": {
+              "behavior": {
+                "allowMultiple": true,
+                "defaultOpen": false
+              },
+              "appearance": {
+                "showIcons": true,
+                "iconColor": "var(--primary-text)",
+                "activeIconColor": "var(--primary-text)",
+                "iconSize": "20px",
+                "mobile": {
+                  "iconSize": "18px",
+                  "iconColor": "var(--primary-text)",
+                  "activeIconColor": "var(--primary-text)"
+                }
+              }
+            }
+          },
+          "id": "FAQSection-b6b144db-d961-4005-aa85-fb3ff803e89f"
+        }
+      },
+      {
+        "type": "StickyButton",
+        "props": {
+          "basicContent": {
+            "text": "Order Online",
+            "link": "#",
+            "target": "_self",
+            "rel": ""
+          },
+          "styling": {
+            "backgroundColor": "var(--primary-color)",
+            "textColor": "var(--primary-text)",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "padding": "12px 24px",
+            "borderRadius": "8px",
+            "boxShadow": "0 4px 12px rgba(0, 0, 0, 0.15)",
+            "zIndex": "1000"
+          },
+          "behavior": {
+            "showWhenBannerHidden": true,
+            "scrollThreshold": 100,
+            "animationDuration": 300,
+            "showOnMobile": true
+          },
+          "id": "StickyButton-e34e1666-5a27-440d-9bdb-81f7cde5159b"
+        }
+      }
+    ],
+    "zones": {}
+  }
+}

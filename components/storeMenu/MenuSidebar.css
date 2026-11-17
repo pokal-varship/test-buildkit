@@ -1,0 +1,31 @@
+.menu-container {
+    width: 250px;
+    background: #fdfcf7;
+    padding: 10px;
+}
+
+.menu-section {
+    margin-bottom: 5px;
+}
+
+.menu-header {
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.menu-list {
+    background: #fdf6e4;
+    padding-left: 20px;
+}
+
+.menu-item {
+    padding: 5px 0;
+}
+
+.arrow-icon {
+    width: 8px;
+    height: 8px;
+} 

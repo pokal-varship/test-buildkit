@@ -1,0 +1,97 @@
+version: '3.7'
+
+services:
+  umami:
+    image: ghcr.io/umami-software/umami:postgresql-latest
+    container_name: umami
+    environment:
+      - DATABASE_URL=postgresql://umami:umami@db:5432/umami
+      - DATABASE_TYPE=postgresql
+      - APP_SECRET=umamisecret  # Set this in Coolify environment for secret
+    ports:
+      - "4000:4000"  # Expose Umami on port 4000
+    depends_on:
+      - db
+    init: true
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "curl http://localhost:4000/api/heartbeat"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - coolify
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.middlewares.gzip.compress=true"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.routers.http-analytics.entryPoints=http"
+      - "traefik.http.routers.http-analytics.rule=Host(`pizzahub.starstruk.app`) && PathPrefix(`/analytics`)"
+      - "traefik.http.routers.http-analytics.middlewares=redirect-to-https"
+      - "traefik.http.routers.https-analytics.entryPoints=https"
+      - "traefik.http.routers.https-analytics.middlewares=gzip"
+      - "traefik.http.routers.https-analytics.rule=Host(`pizzahub.starstruk.app`) && PathPrefix(`/analytics`)"
+      - "traefik.http.routers.https-analytics.service=umami-service"
+      - "traefik.http.routers.https-analytics.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.https-analytics.tls=true"
+      - "traefik.http.services.umami-service.loadbalancer.server.port=4000"
+
+  db:
+    image: postgres:15-alpine
+    container_name: umami_db
+    environment:
+      - POSTGRES_DB=umami
+      - POSTGRES_USER=umami
+      - POSTGRES_PASSWORD=umami
+    volumes:
+      - umami-db-data:/var/lib/postgresql/data
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - coolify
+
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    environment:
+      - CADDY_INGRESS_NETWORK=coolify
+    networks:
+      - coolify
+    labels:
+      - "caddy_0.encode=zstd gzip"
+      - "caddy_0.handle_path.0_reverse_proxy={{upstreams 4000}}"
+      - "caddy_0.handle_path=/*"
+      - "caddy_0.header=-Server"
+      - "caddy_0.try_files={path} /index.html /index.php"
+      - "caddy_0=https://pizzahub.starstruk.app"
+    restart: always
+
+  traefik:
+    image: traefik:v2.5
+    container_name: traefik
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--entryPoints.http.address=:80"
+      - "--entryPoints.https.address=:443"
+      - "--certificatesResolvers.letsencrypt.acme.httpChallenge.entryPoint=http"
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - coolify
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    restart: always
+
+networks:
+  coolify:
+    external: true
+
+volumes:
+  umami-db-data:
+    driver: local

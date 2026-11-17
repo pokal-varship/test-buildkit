@@ -1,0 +1,6 @@
+<svg id="grid-selected" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="42" height="42" rx="10" fill="currentColor"/>
+<path d="M17.7694 31.7689H24.231C29.6156 31.7689 31.7694 29.6151 31.7694 24.2305V17.7689C31.7694 12.3843 29.6156 10.2305 24.231 10.2305H17.7694C12.3848 10.2305 10.231 12.3843 10.231 17.7689V24.2305C10.231 29.6151 12.3848 31.7689 17.7694 31.7689Z" stroke="var(--primary-icon-color)" stroke-width="1.61538" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 10.2305V31.7689" stroke="var(--primary-icon-color)" stroke-width="1.61538" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.231 21H31.7694" stroke="var(--primary-icon-color)" stroke-width="1.61538" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

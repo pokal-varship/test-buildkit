@@ -1,0 +1,54 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Theme-aware component classes */
+/* @layer components {
+  .themed-heading {
+    @apply font-heading text-primary;
+  }
+  
+  .themed-text {
+    @apply font-body text-text;
+  }
+  
+  .themed-container {
+    @apply px-[var(--spacing-container)];
+  }
+  
+  .themed-section {
+    @apply py-[var(--spacing-section)];
+  }
+} */
+
+body {
+  background-color: var(--primary-background);
+  color: var(--primary-text);
+  font-family: var(--font-family);
+}
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: var(--primary-background);
+  border-radius: 10px;
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+
+
+

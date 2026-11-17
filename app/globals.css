@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-family) !important;
+  font-size: var(--base-font-size) !important;
+}
+
+* {
+  font-family: var(--font-family);
+}
+
+/* Ensure html element uses base font size */
+html {
+  font-size: var(--base-font-size);
+}
+
+.max-width-container {
+  width: 100%;
+  max-width: 1280px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
+}
+
+.theme-config-container {
+  width: 100%;
+  max-width: 1400px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
+}
+
+.root-layout {
+ padding-top: 81px; 
+}
+@media (min-width: 768px) and (max-width: 974px) {
+  .root-layout {
+    padding-top: 104px;
+  }
+}
+@media (max-width: 768px) {
+  .max-width-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .theme-config-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .root-layout {
+    padding-top: 71px;
+  }
+}
+
+h1 {
+  font-size: var(--heading-h1);
+}
+h2 {
+  font-size: var(--heading-h2);
+}
+h3 {
+  font-size: var(--heading-h3);
+}
+h4 {
+  font-size: var(--heading-h4);
+}
+h5 {
+  font-size: var(--heading-h5);
+}
+h6 {
+  font-size: var(--heading-h6);
+}
+.font-300{
+  font-weight: var(--font-light) !important;
+}
+.font-400{
+  font-weight: var(--font-regular) !important;
+}
+.font-500{
+  font-weight: var(--font-medium) !important;
+}
+.font-600{
+  font-weight: var(--font-semi-bold) !important;
+}
+.font-700{
+  font-weight: var(--font-bold) !important;
+}
+.font-800{
+  font-weight: var(--font-extra-bold) !important;
+}
+.heading-1{
+  font-size: var(--heading-h1) !important;
+}
+.heading-2{
+  font-size: var(--heading-h2) !important;
+}
+.heading-3{
+  font-size: var(--heading-h3) !important;
+}
+.heading-4{
+  font-size: var(--heading-h4) !important;
+}
+.heading-5{
+  font-size: var(--heading-h5) !important;
+}
+.heading-6{
+  font-size: var(--heading-h6) !important;
+}
+.extra-small-font{
+  font-size: var(--extraSmall-font) !important;
+}
+@media (min-width: 768px) {
+  .md-heading-1 {
+    font-size: var(--heading-h1) !important;
+  }
+  .md-heading-2 {
+    font-size: var(--heading-h2) !important;
+  }
+  .md-heading-3 {
+    font-size: var(--heading-h3) !important;
+  }
+  .md-heading-4 {
+    font-size: var(--heading-h4) !important;
+  }
+  .md-heading-5 {
+    font-size: var(--heading-h5) !important;
+  }
+  .md-heading-6 {
+    font-size: var(--heading-h6) !important;
+  }
+  .md-extra-small-font{
+    font-size: var(--extraSmall-font) !important;
+  }
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 40vh;
+}
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+.payment-dialog {
+  min-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .payment-dialog {
+    min-width: 300px;
+  }
+}
+
+/* Admin / theme-config primary actions — uses theme button CSS variables */
+.btn-admin-primary {
+  background: var(--button-primary-background);
+  color: var(--button-primary-text);
+  font-size: var(--button-primary-font-size);
+  border: var(--button-primary-border-width) solid var(--button-primary-border-color);
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.btn-admin-primary:hover:not(:disabled) {
+  background: var(--button-primary-hover-background);
+  color: var(--button-primary-hover-text);
+}
+
+.btn-admin-primary:active:not(:disabled) {
+  background: var(--button-primary-active-background);
+}

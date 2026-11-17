@@ -1,0 +1,6 @@
+<svg id="grid" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.617647 10C0.617647 4.81827 4.81827 0.617647 10 0.617647H32C37.1817 0.617647 41.3824 4.81827 41.3824 10V32C41.3824 37.1817 37.1817 41.3824 32 41.3824H10C4.81827 41.3824 0.617647 37.1817 0.617647 32V10Z" stroke="#D7D5C4" stroke-width="1.23529"/>
+<path d="M17.7694 31.7694H24.231C29.6156 31.7694 31.7694 29.6156 31.7694 24.231V17.7694C31.7694 12.3848 29.6156 10.231 24.231 10.231H17.7694C12.3848 10.231 10.231 12.3848 10.231 17.7694V24.231C10.231 29.6156 12.3848 31.7694 17.7694 31.7694Z" stroke="var(--primary-text)" stroke-width="1.61538" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 10.231V31.7694" stroke="var(--primary-text)" stroke-width="1.61538" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.231 21H31.7694" stroke="var(--primary-text)" stroke-width="1.61538" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
